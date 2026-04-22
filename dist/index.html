@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.11.0">
+<title>Clinical Trial Analytics + AI Demo</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-air,near-midnight.6e6037b3.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-air,near-midnight.6e6037b3.css">
+<link rel="modulepreload" href="./_observablehq/client.c9712b15.js">
+<link rel="modulepreload" href="./_observablehq/runtime.41a8479e.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.37bd6a7b.js">
+<link rel="modulepreload" href="./_import/components/demoData.842f79a9.js">
+<link rel="modulepreload" href="./_import/components/pagePager.006a4fa6.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/72f4716c.js">
+<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<script type="module">
+
+import {define} from "./_observablehq/client.c9712b15.js";
+import {registerFile} from "./_observablehq/stdlib.37bd6a7b.js";
+
+registerFile("./data/demo/ADLB.json", {"name":"./data/demo/ADLB.json","mimeType":"application/json","path":"./_file/data/demo/ADLB.d83b6985.json","lastModified":1776825323225,"size":96723});
+registerFile("./data/demo/ADSL.json", {"name":"./data/demo/ADSL.json","mimeType":"application/json","path":"./_file/data/demo/ADSL.339674d3.json","lastModified":1776825323228,"size":25365});
+registerFile("./data/demo/adlbInputs.json", {"name":"./data/demo/adlbInputs.json","mimeType":"application/json","path":"./_file/data/demo/adlbInputs.cbd037a7.json","lastModified":1776825323227,"size":61});
+registerFile("./data/demo/adslInputs.json", {"name":"./data/demo/adslInputs.json","mimeType":"application/json","path":"./_file/data/demo/adslInputs.4fc7dd21.json","lastModified":1776825323226,"size":218});
+registerFile("./data/demo/masterData.json", {"name":"./data/demo/masterData.json","mimeType":"application/json","path":"./_file/data/demo/masterData.fdf475d9.json","lastModified":1776825323227,"size":87822});
+
+define({id: "14359287", inputs: ["FileAttachment","display","html"], outputs: ["buildDemoDataFlowNote","persistDemoBundle","renderPagePager","seededADSL","seededADLB","seededAdslInputs","seededAdlbInputs","seededMasterData"], body: async (FileAttachment,display,html) => {
+const [{buildDemoDataFlowNote, persistDemoBundle}, {renderPagePager}] = await Promise.all([import("./_import/components/demoData.842f79a9.js"), import("./_import/components/pagePager.006a4fa6.js")]);
+
+const seededADSL = await FileAttachment("./data/demo/ADSL.json").json();
+const seededADLB = await FileAttachment("./data/demo/ADLB.json").json();
+const seededAdslInputs = await FileAttachment("./data/demo/adslInputs.json").json();
+const seededAdlbInputs = await FileAttachment("./data/demo/adlbInputs.json").json();
+const seededMasterData = await FileAttachment("./data/demo/masterData.json").json();
+
+if (typeof window !== "undefined" && window.localStorage) {
+  for (const [key, value] of Object.entries({
+    ADSL: seededADSL,
+    ADLB: seededADLB,
+    adslInputs: seededAdslInputs,
+    adlbInputs: seededAdlbInputs,
+    masterData: seededMasterData
+  })) {
+    if (!window.localStorage.getItem(key)) {
+      window.localStorage.setItem(key, JSON.stringify(value));
+    }
+  }
+}
+
+display(html`<div class="hero">
+  <p class="hero-kicker">Public Demo</p>
+  <h1>Clinical Trial Analytics + AI Demo</h1>
+  <h2>Explore a complete synthetic clinical workflow: simulate ADaM-style data, review analytical outputs, inspect submission-style tables, and ask explainable AI questions backed by a semantic layer and read-only DuckDB views.</h2>
+</div>`);
+
+display(html`<hr>`);
+
+display(html`<section class="workflow">
+  <div class="workflow-intro">
+    <h2>How to navigate the demo</h2>
+    <p>Start with the simulated study data, move into exploratory analysis and regulatory-style outputs, then open the AI section to see how the same synthetic study can be queried through a semantic layer, visible routing, generated SQL, and a result table.</p>
+  </div>
+  <div class="workflow-grid">
+    <a class="workflow-card" href="/Enrollment-Monitoring">
+      <span class="workflow-step">1. Enrollment workflow</span>
+      <strong>Monitor recruitment status over time</strong>
+      <p>Simulate how subjects move from consent through screening, approval, pending procedure, roll-in, and randomization.</p>
+    </a>
+    <a class="workflow-card" href="/ADaM-Datasets">
+      <span class="workflow-step">2. Data simulation</span>
+      <strong>Generate synthetic ADaM-style datasets</strong>
+      <p>Review subject-level and longitudinal structures that feed the downstream analytics and output tables.</p>
+    </a>
+    <a class="workflow-card" href="/Descriptive-Statistics">
+      <span class="workflow-step">3. Clinical analysis</span>
+      <strong>Inspect descriptive, summary, and efficacy views</strong>
+      <p>Move from exploratory statistics to forest plots, Kaplan-Meier views, ORR summaries, and submission-ready tables.</p>
+    </a>
+    <a class="workflow-card" href="/ai/ai-study-explorer">
+      <span class="workflow-step">4. Explainable AI</span>
+      <strong>See how questions become answers</strong>
+      <p>Follow the selected dataset, routing decision, generated SQL, result table, interpretation, and safety notes in one place.</p>
+    </a>
+  </div>
+</section>`);
+
+display(html`<hr>`);
+
+display(html`<section class="landing-note">
+  <h2>What makes this demo different</h2>
+  <p>The project intentionally keeps the analytical story visible. The AI experience does not replace the analytics workflow; it sits on top of the same synthetic study narrative and shows how semantic definitions, routing rules, generated SQL, and safety checks support a trustworthy answer.</p>
+  <p><small>${buildDemoDataFlowNote([
+    {label: "ADSL", source: "bundled"},
+    {label: "ADLB", source: "bundled"},
+    {label: "masterData", source: "bundled"}
+  ], {includeServerNote: true})}</small></p>
+</section>`);
+
+display(renderPagePager("/"));
+return {buildDemoDataFlowNote,persistDemoBundle,renderPagePager,seededADSL,seededADLB,seededAdslInputs,seededAdlbInputs,seededMasterData};
+}});
+
+</script>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link observablehq-link-active"><a href="./">Clinical Trial Analytics + AI Demo</a></li>
+  </ol>
+  <section>
+    <summary class="observablehq-link"><a href="./Enrollment-Monitoring">Enrollment Workflow</a></summary>
+    <ol>
+    </ol>
+  </section>
+  <section>
+    <summary>Data Simulation</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./ADaM-Datasets">ADaM Datasets</a></li>
+    <li class="observablehq-link"><a href="./Master-Dataset">Master Dataset</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Analysis</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./Descriptive-Statistics">Descriptive Statistics</a></li>
+    <li class="observablehq-link"><a href="./Summerized-Information">Summarized Information</a></li>
+    <li class="observablehq-link"><a href="./Efficacy-Analyses">Efficacy Analyses</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Submission Outputs</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./Demographic-Table">Demographic Table</a></li>
+    <li class="observablehq-link"><a href="./Primary-Table">Primary Table</a></li>
+    <li class="observablehq-link"><a href="./Followup-Table">Visit Completion Table</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>AI Experience</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./ai/ai-study-explorer">AI Study Explorer</a></li>
+    <li class="observablehq-link"><a href="./ai/semantic-layer">Semantic Layer</a></li>
+    <li class="observablehq-link"><a href="./ai/query-routing">Query Routing</a></li>
+    <li class="observablehq-link"><a href="./ai/evaluation">Evaluation</a></li>
+    <li class="observablehq-link"><a href="./ai/architecture">Architecture</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary class="observablehq-link"><a href="./About-Author">About the Author</a></summary>
+    <ol>
+    </ol>
+  </section>
+</nav>
+<script>{Object.assign(document.createElement("a"),{href:""}).password&&location.replace(location.href);const e=document.querySelector("#observablehq-sidebar"),t=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?t.checked=r==="true":t.indeterminate=!0;for(const o of document.querySelectorAll("#observablehq-sidebar summary")){const s=o.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${o.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+</nav>
+</aside>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<div class="observablehq observablehq--block"><!--:14359287:--></div>
+<style>
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--sans-serif);
+  margin: 4rem 0 4rem;
+  text-wrap: balance;
+  text-align: center;
+}
+
+.hero-kicker {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--theme-foreground-muted);
+}
+
+.hero h1 {
+  margin: 1rem 0;
+  padding: 1rem 0;
+  max-width: none;
+  font-size: 14vw;
+  font-weight: 900;
+  line-height: 1;
+  background: linear-gradient(30deg, var(--theme-foreground-focus), currentColor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero h2 {
+  margin: 0;
+  max-width: 42em;
+  font-size: 20px;
+  font-style: initial;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--theme-foreground-muted);
+}
+
+.hero-copy {
+  margin-top: 3rem;
+}
+
+.workflow {
+  display: grid;
+  gap: 1.25rem;
+  margin: 2rem 0 3rem;
+}
+
+.workflow-intro h2,
+.landing-note h2 {
+  margin-bottom: 0.35rem;
+}
+
+.workflow-intro p,
+.landing-note p {
+  max-width: 60rem;
+  color: var(--theme-foreground-muted);
+}
+
+.workflow-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.workflow-card {
+  display: grid;
+  gap: 0.55rem;
+  padding: 1.1rem 1.15rem;
+  border: 1px solid var(--theme-foreground-fainter);
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(247,249,252,0.92));
+  text-decoration: none;
+  color: inherit;
+}
+
+.workflow-card:hover {
+  border-color: var(--theme-foreground-focus);
+  text-decoration: none;
+}
+
+.workflow-step {
+  color: #5b7186;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.workflow-card strong {
+  font-size: 1.02rem;
+}
+
+.workflow-card p {
+  margin: 0;
+  color: var(--theme-foreground-muted);
+}
+
+.landing-note {
+  margin: 2rem 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .hero h1 {
+    font-size: 90px;
+  }
+}
+</style>
+</main>
+</div>

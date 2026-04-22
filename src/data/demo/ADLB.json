@@ -1,0 +1,4118 @@
+[
+    {
+        "USUBJID": "Subject_001",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 10.230041412680583
+    },
+    {
+        "USUBJID": "Subject_002",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -1.5512925865341516
+    },
+    {
+        "USUBJID": "Subject_003",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -17.62553044793144
+    },
+    {
+        "USUBJID": "Subject_004",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -0.6432789916667796
+    },
+    {
+        "USUBJID": "Subject_005",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 16.405058947153414
+    },
+    {
+        "USUBJID": "Subject_006",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 15.790678981657187
+    },
+    {
+        "USUBJID": "Subject_007",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -1.9792726998515053
+    },
+    {
+        "USUBJID": "Subject_008",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -14.662738303330412
+    },
+    {
+        "USUBJID": "Subject_009",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 11.624598794245589
+    },
+    {
+        "USUBJID": "Subject_010",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 2.3282157456848775
+    },
+    {
+        "USUBJID": "Subject_011",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -5.708203675744612
+    },
+    {
+        "USUBJID": "Subject_012",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -0.47119012825150275
+    },
+    {
+        "USUBJID": "Subject_013",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 2.7728039057722844
+    },
+    {
+        "USUBJID": "Subject_014",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 0.8224052914639687
+    },
+    {
+        "USUBJID": "Subject_015",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -10.465359560306329
+    },
+    {
+        "USUBJID": "Subject_016",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -4.9369632009510145
+    },
+    {
+        "USUBJID": "Subject_017",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 10.656260581557506
+    },
+    {
+        "USUBJID": "Subject_018",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -8.046249230841234
+    },
+    {
+        "USUBJID": "Subject_019",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 2.9772102298553245
+    },
+    {
+        "USUBJID": "Subject_020",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 2.5067283673345395
+    },
+    {
+        "USUBJID": "Subject_021",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 3.6834564842717703
+    },
+    {
+        "USUBJID": "Subject_022",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -0.6479355067483638
+    },
+    {
+        "USUBJID": "Subject_023",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 5.117556436671948
+    },
+    {
+        "USUBJID": "Subject_024",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -5.122171418384751
+    },
+    {
+        "USUBJID": "Subject_025",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -9.049335151669167
+    },
+    {
+        "USUBJID": "Subject_026",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 6.294954753917989
+    },
+    {
+        "USUBJID": "Subject_027",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -4.928523026841834
+    },
+    {
+        "USUBJID": "Subject_028",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -0.5510241988773574
+    },
+    {
+        "USUBJID": "Subject_029",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -10.6747323247441
+    },
+    {
+        "USUBJID": "Subject_030",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -8.435007549097698
+    },
+    {
+        "USUBJID": "Subject_031",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 6.546790092896599
+    },
+    {
+        "USUBJID": "Subject_032",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -11.069197605325925
+    },
+    {
+        "USUBJID": "Subject_033",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 4.192650016837346
+    },
+    {
+        "USUBJID": "Subject_034",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -0.4786525131749327
+    },
+    {
+        "USUBJID": "Subject_035",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 6.103776462468957
+    },
+    {
+        "USUBJID": "Subject_036",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 1.590314066611802
+    },
+    {
+        "USUBJID": "Subject_037",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -4.821728189756289
+    },
+    {
+        "USUBJID": "Subject_038",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -2.017287224351123
+    },
+    {
+        "USUBJID": "Subject_039",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -0.8083421573051349
+    },
+    {
+        "USUBJID": "Subject_040",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -22.010982149545445
+    },
+    {
+        "USUBJID": "Subject_041",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -3.970143505223864
+    },
+    {
+        "USUBJID": "Subject_042",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 8.495987764588696
+    },
+    {
+        "USUBJID": "Subject_043",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 0.22007893498705422
+    },
+    {
+        "USUBJID": "Subject_044",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 1.783354738470444
+    },
+    {
+        "USUBJID": "Subject_045",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 0.35778629351820146
+    },
+    {
+        "USUBJID": "Subject_046",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 0.028961516780197375
+    },
+    {
+        "USUBJID": "Subject_047",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 3.8226607995669477
+    },
+    {
+        "USUBJID": "Subject_048",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -15.975581241129982
+    },
+    {
+        "USUBJID": "Subject_049",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 8.207015031165982
+    },
+    {
+        "USUBJID": "Subject_050",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -7.900597078411557
+    },
+    {
+        "USUBJID": "Subject_051",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 3.871473984985869
+    },
+    {
+        "USUBJID": "Subject_052",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -4.370781580044598
+    },
+    {
+        "USUBJID": "Subject_053",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 0.9445930368064316
+    },
+    {
+        "USUBJID": "Subject_054",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 3.6011040438971382
+    },
+    {
+        "USUBJID": "Subject_055",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -4.4962474511122394
+    },
+    {
+        "USUBJID": "Subject_056",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -0.27370398425970816
+    },
+    {
+        "USUBJID": "Subject_057",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 11.669647018116722
+    },
+    {
+        "USUBJID": "Subject_058",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -9.59453157655631
+    },
+    {
+        "USUBJID": "Subject_059",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 10.750470231448988
+    },
+    {
+        "USUBJID": "Subject_060",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -5.992034465829705
+    },
+    {
+        "USUBJID": "Subject_061",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 3.5117119352283708
+    },
+    {
+        "USUBJID": "Subject_062",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 2.5971734536110507
+    },
+    {
+        "USUBJID": "Subject_063",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -3.67421669707958
+    },
+    {
+        "USUBJID": "Subject_064",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -6.4432394653050045
+    },
+    {
+        "USUBJID": "Subject_065",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -2.0625014697082147
+    },
+    {
+        "USUBJID": "Subject_066",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 10.569577981069674
+    },
+    {
+        "USUBJID": "Subject_067",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 0.9505125218090427
+    },
+    {
+        "USUBJID": "Subject_068",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -1.8154050836741524
+    },
+    {
+        "USUBJID": "Subject_069",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -10.99406222181028
+    },
+    {
+        "USUBJID": "Subject_070",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -7.908919104178893
+    },
+    {
+        "USUBJID": "Subject_071",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 19.33206348241655
+    },
+    {
+        "USUBJID": "Subject_072",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 3.2486732097932425
+    },
+    {
+        "USUBJID": "Subject_073",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -2.745720458573298
+    },
+    {
+        "USUBJID": "Subject_074",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 14.58243665675428
+    },
+    {
+        "USUBJID": "Subject_075",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 10.340350090133596
+    },
+    {
+        "USUBJID": "Subject_076",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -5.384782416154113
+    },
+    {
+        "USUBJID": "Subject_077",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -11.66011573953261
+    },
+    {
+        "USUBJID": "Subject_078",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -17.875325812636945
+    },
+    {
+        "USUBJID": "Subject_079",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 16.49592374624313
+    },
+    {
+        "USUBJID": "Subject_080",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 0.5293367407640436
+    },
+    {
+        "USUBJID": "Subject_081",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 9.003601956512142
+    },
+    {
+        "USUBJID": "Subject_082",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -8.760230201635798
+    },
+    {
+        "USUBJID": "Subject_083",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -5.201294437369718
+    },
+    {
+        "USUBJID": "Subject_084",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 4.506317486750554
+    },
+    {
+        "USUBJID": "Subject_085",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -4.263851386739702
+    },
+    {
+        "USUBJID": "Subject_086",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -5.840801262567031
+    },
+    {
+        "USUBJID": "Subject_087",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 6.015516722305275
+    },
+    {
+        "USUBJID": "Subject_088",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 0.6654499290206848
+    },
+    {
+        "USUBJID": "Subject_089",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 1.0900185499710597
+    },
+    {
+        "USUBJID": "Subject_090",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 1.5532077584586033
+    },
+    {
+        "USUBJID": "Subject_091",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 5.430929978556977
+    },
+    {
+        "USUBJID": "Subject_092",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -10.49861905974164
+    },
+    {
+        "USUBJID": "Subject_093",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 17.624386372394245
+    },
+    {
+        "USUBJID": "Subject_094",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 4.251806204621287
+    },
+    {
+        "USUBJID": "Subject_095",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 9.14950053798046
+    },
+    {
+        "USUBJID": "Subject_096",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 9.073245811006046
+    },
+    {
+        "USUBJID": "Subject_097",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -3.332815189634272
+    },
+    {
+        "USUBJID": "Subject_098",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -0.31309606878578833
+    },
+    {
+        "USUBJID": "Subject_099",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 5.437015719899248
+    },
+    {
+        "USUBJID": "Subject_100",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -3.72466960477416
+    },
+    {
+        "USUBJID": "Subject_001",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 18.141565702650173
+    },
+    {
+        "USUBJID": "Subject_002",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -3.2982889337235854
+    },
+    {
+        "USUBJID": "Subject_003",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 11.753690341698002
+    },
+    {
+        "USUBJID": "Subject_004",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 1.270563896017233
+    },
+    {
+        "USUBJID": "Subject_005",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 3.6253685906162256
+    },
+    {
+        "USUBJID": "Subject_006",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -0.05156728502664422
+    },
+    {
+        "USUBJID": "Subject_007",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 24.398779048697946
+    },
+    {
+        "USUBJID": "Subject_008",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -22.68826884019899
+    },
+    {
+        "USUBJID": "Subject_009",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 10.38749772579851
+    },
+    {
+        "USUBJID": "Subject_010",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 9.41713549453866
+    },
+    {
+        "USUBJID": "Subject_011",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -7.657565005723366
+    },
+    {
+        "USUBJID": "Subject_012",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 10.059269882952112
+    },
+    {
+        "USUBJID": "Subject_013",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -0.8142355631918313
+    },
+    {
+        "USUBJID": "Subject_014",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -3.84150742703884
+    },
+    {
+        "USUBJID": "Subject_015",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 2.030783983522484
+    },
+    {
+        "USUBJID": "Subject_016",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 4.671274499479359
+    },
+    {
+        "USUBJID": "Subject_017",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -22.157621005736125
+    },
+    {
+        "USUBJID": "Subject_018",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 3.962246657633138
+    },
+    {
+        "USUBJID": "Subject_019",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 14.3139995362183
+    },
+    {
+        "USUBJID": "Subject_020",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 21.467624843404636
+    },
+    {
+        "USUBJID": "Subject_021",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -16.359973534676254
+    },
+    {
+        "USUBJID": "Subject_022",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 10.003241889852722
+    },
+    {
+        "USUBJID": "Subject_023",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -2.7980413719669746
+    },
+    {
+        "USUBJID": "Subject_024",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -7.57429603148362
+    },
+    {
+        "USUBJID": "Subject_025",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 3.9240077503875903
+    },
+    {
+        "USUBJID": "Subject_026",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -10.773277765179836
+    },
+    {
+        "USUBJID": "Subject_027",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -3.6814729630711507
+    },
+    {
+        "USUBJID": "Subject_028",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -14.703149094329344
+    },
+    {
+        "USUBJID": "Subject_029",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 1.855233312405661
+    },
+    {
+        "USUBJID": "Subject_030",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -0.11098946829637206
+    },
+    {
+        "USUBJID": "Subject_031",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -9.396761945366332
+    },
+    {
+        "USUBJID": "Subject_032",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -0.08517593883755045
+    },
+    {
+        "USUBJID": "Subject_033",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 5.547571591461135
+    },
+    {
+        "USUBJID": "Subject_034",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 1.3870329736922338
+    },
+    {
+        "USUBJID": "Subject_035",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 3.3697962486213426
+    },
+    {
+        "USUBJID": "Subject_036",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -3.263748203209412
+    },
+    {
+        "USUBJID": "Subject_037",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -6.842914133561097
+    },
+    {
+        "USUBJID": "Subject_038",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 2.68126775478149
+    },
+    {
+        "USUBJID": "Subject_039",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 7.424273451576573
+    },
+    {
+        "USUBJID": "Subject_040",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 13.866324823777383
+    },
+    {
+        "USUBJID": "Subject_041",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -3.9860831043019282
+    },
+    {
+        "USUBJID": "Subject_042",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -4.587639258552836
+    },
+    {
+        "USUBJID": "Subject_043",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 20.95500104736015
+    },
+    {
+        "USUBJID": "Subject_044",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -6.176497180466363
+    },
+    {
+        "USUBJID": "Subject_045",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -8.462136804295351
+    },
+    {
+        "USUBJID": "Subject_046",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -1.1359979818831392
+    },
+    {
+        "USUBJID": "Subject_047",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 7.460954940742265
+    },
+    {
+        "USUBJID": "Subject_048",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 19.595626762299187
+    },
+    {
+        "USUBJID": "Subject_049",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -17.050507133153495
+    },
+    {
+        "USUBJID": "Subject_050",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 5.097966078500191
+    },
+    {
+        "USUBJID": "Subject_051",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -4.149477607503576
+    },
+    {
+        "USUBJID": "Subject_052",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 15.2677942988839
+    },
+    {
+        "USUBJID": "Subject_053",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -2.674490094608424
+    },
+    {
+        "USUBJID": "Subject_054",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -15.402124098421993
+    },
+    {
+        "USUBJID": "Subject_055",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -1.7376791563941487
+    },
+    {
+        "USUBJID": "Subject_056",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 6.902800243234087
+    },
+    {
+        "USUBJID": "Subject_057",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 1.5215395277330717
+    },
+    {
+        "USUBJID": "Subject_058",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 7.6887276809025895
+    },
+    {
+        "USUBJID": "Subject_059",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 4.073339727916822
+    },
+    {
+        "USUBJID": "Subject_060",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -1.392690723425837
+    },
+    {
+        "USUBJID": "Subject_061",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 13.971830871618083
+    },
+    {
+        "USUBJID": "Subject_062",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -0.24863839806535454
+    },
+    {
+        "USUBJID": "Subject_063",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 6.655219909166533
+    },
+    {
+        "USUBJID": "Subject_064",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -0.6152382664498025
+    },
+    {
+        "USUBJID": "Subject_065",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -6.161204871317005
+    },
+    {
+        "USUBJID": "Subject_066",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 3.6862441706585187
+    },
+    {
+        "USUBJID": "Subject_067",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 3.3911974329658565
+    },
+    {
+        "USUBJID": "Subject_068",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 8.770119472663177
+    },
+    {
+        "USUBJID": "Subject_069",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 4.0213079473755
+    },
+    {
+        "USUBJID": "Subject_070",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 17.859023265234963
+    },
+    {
+        "USUBJID": "Subject_071",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 0.0600506147588091
+    },
+    {
+        "USUBJID": "Subject_072",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -10.978758012810214
+    },
+    {
+        "USUBJID": "Subject_073",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 3.750571972463526
+    },
+    {
+        "USUBJID": "Subject_074",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 0.44095102224338184
+    },
+    {
+        "USUBJID": "Subject_075",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 0.40110287496277036
+    },
+    {
+        "USUBJID": "Subject_076",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 4.173296455870023
+    },
+    {
+        "USUBJID": "Subject_077",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -7.049772710747587
+    },
+    {
+        "USUBJID": "Subject_078",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 32.96644663102595
+    },
+    {
+        "USUBJID": "Subject_079",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 5.2586040917210655
+    },
+    {
+        "USUBJID": "Subject_080",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 5.960919550265682
+    },
+    {
+        "USUBJID": "Subject_081",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 2.5146263761336525
+    },
+    {
+        "USUBJID": "Subject_082",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -16.01159927639398
+    },
+    {
+        "USUBJID": "Subject_083",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 0.6770979682566137
+    },
+    {
+        "USUBJID": "Subject_084",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 0.654112184938211
+    },
+    {
+        "USUBJID": "Subject_085",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -14.809441909092616
+    },
+    {
+        "USUBJID": "Subject_086",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 2.7344975207525173
+    },
+    {
+        "USUBJID": "Subject_087",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 3.148354780344507
+    },
+    {
+        "USUBJID": "Subject_088",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 9.13268981906296
+    },
+    {
+        "USUBJID": "Subject_089",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 8.85767337342656
+    },
+    {
+        "USUBJID": "Subject_090",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -19.29904607995613
+    },
+    {
+        "USUBJID": "Subject_091",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 6.051777329041839
+    },
+    {
+        "USUBJID": "Subject_092",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -6.070740470483158
+    },
+    {
+        "USUBJID": "Subject_093",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -5.703986787993919
+    },
+    {
+        "USUBJID": "Subject_094",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -11.844721658546904
+    },
+    {
+        "USUBJID": "Subject_095",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 5.877205569956455
+    },
+    {
+        "USUBJID": "Subject_096",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -2.1215688157188657
+    },
+    {
+        "USUBJID": "Subject_097",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -2.4070561740135648
+    },
+    {
+        "USUBJID": "Subject_098",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 4.264736495621837
+    },
+    {
+        "USUBJID": "Subject_099",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -5.675058529878734
+    },
+    {
+        "USUBJID": "Subject_100",
+        "VISIT": "Visit0",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -10.322606065186188
+    },
+    {
+        "USUBJID": "Subject_001",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 7.464401676630764
+    },
+    {
+        "USUBJID": "Subject_002",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 12.333456570411066
+    },
+    {
+        "USUBJID": "Subject_003",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 3.8635679926028996
+    },
+    {
+        "USUBJID": "Subject_004",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -1.1496124903324203
+    },
+    {
+        "USUBJID": "Subject_005",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -3.295290459134857
+    },
+    {
+        "USUBJID": "Subject_006",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 5.52346917700693
+    },
+    {
+        "USUBJID": "Subject_007",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 13.336372262561074
+    },
+    {
+        "USUBJID": "Subject_008",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -1.9495838264634777
+    },
+    {
+        "USUBJID": "Subject_009",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 11.705869079403026
+    },
+    {
+        "USUBJID": "Subject_010",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 9.974623524099963
+    },
+    {
+        "USUBJID": "Subject_011",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 3.0490792871375265
+    },
+    {
+        "USUBJID": "Subject_012",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 3.8104648992918944
+    },
+    {
+        "USUBJID": "Subject_014",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 11.502644966438766
+    },
+    {
+        "USUBJID": "Subject_015",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -3.6598660841896615
+    },
+    {
+        "USUBJID": "Subject_017",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -1.410198885123192
+    },
+    {
+        "USUBJID": "Subject_018",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -0.5736881603713115
+    },
+    {
+        "USUBJID": "Subject_019",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -2.8339614286708725
+    },
+    {
+        "USUBJID": "Subject_020",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 9.045605811083217
+    },
+    {
+        "USUBJID": "Subject_021",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 3.3349297377922786
+    },
+    {
+        "USUBJID": "Subject_022",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 21.094035752069225
+    },
+    {
+        "USUBJID": "Subject_023",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 2.02455014328915
+    },
+    {
+        "USUBJID": "Subject_024",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 12.393067693542845
+    },
+    {
+        "USUBJID": "Subject_025",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -2.3608244106604905
+    },
+    {
+        "USUBJID": "Subject_026",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 15.789773255761288
+    },
+    {
+        "USUBJID": "Subject_028",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 9.67680730689187
+    },
+    {
+        "USUBJID": "Subject_029",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 0.4654794484265685
+    },
+    {
+        "USUBJID": "Subject_030",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 3.138034235272568
+    },
+    {
+        "USUBJID": "Subject_031",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -1.6855492064192283
+    },
+    {
+        "USUBJID": "Subject_032",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 5.001773733432388
+    },
+    {
+        "USUBJID": "Subject_033",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -0.6361700076580403
+    },
+    {
+        "USUBJID": "Subject_035",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 19.268288268559694
+    },
+    {
+        "USUBJID": "Subject_036",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 12.121861036878848
+    },
+    {
+        "USUBJID": "Subject_037",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -9.105230156887965
+    },
+    {
+        "USUBJID": "Subject_038",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 10.795469799914631
+    },
+    {
+        "USUBJID": "Subject_039",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -1.230054259448731
+    },
+    {
+        "USUBJID": "Subject_040",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 6.227791698132644
+    },
+    {
+        "USUBJID": "Subject_041",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -21.796658224578923
+    },
+    {
+        "USUBJID": "Subject_042",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 7.158439701105139
+    },
+    {
+        "USUBJID": "Subject_043",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 11.99591075253051
+    },
+    {
+        "USUBJID": "Subject_044",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 14.195330698635367
+    },
+    {
+        "USUBJID": "Subject_045",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -11.683474755497299
+    },
+    {
+        "USUBJID": "Subject_046",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 3.931858946489823
+    },
+    {
+        "USUBJID": "Subject_047",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -9.345904651554424
+    },
+    {
+        "USUBJID": "Subject_049",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 0.4474211702798825
+    },
+    {
+        "USUBJID": "Subject_050",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 3.997315027318945
+    },
+    {
+        "USUBJID": "Subject_051",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -2.629210297440685
+    },
+    {
+        "USUBJID": "Subject_052",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 1.7438528990090862
+    },
+    {
+        "USUBJID": "Subject_054",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 4.426350822233019
+    },
+    {
+        "USUBJID": "Subject_055",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 8.922710528907132
+    },
+    {
+        "USUBJID": "Subject_056",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 13.9947655670953
+    },
+    {
+        "USUBJID": "Subject_057",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -0.8386010409419935
+    },
+    {
+        "USUBJID": "Subject_058",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 2.558770284535906
+    },
+    {
+        "USUBJID": "Subject_059",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -3.4138130694290423
+    },
+    {
+        "USUBJID": "Subject_060",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 12.27764110472783
+    },
+    {
+        "USUBJID": "Subject_061",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -8.995752684225671
+    },
+    {
+        "USUBJID": "Subject_063",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -3.9108568569660473
+    },
+    {
+        "USUBJID": "Subject_064",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -13.841394546213078
+    },
+    {
+        "USUBJID": "Subject_066",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 11.95873947289233
+    },
+    {
+        "USUBJID": "Subject_067",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -2.457862947721188
+    },
+    {
+        "USUBJID": "Subject_068",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 5.175208313028677
+    },
+    {
+        "USUBJID": "Subject_069",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -3.9364827534635953
+    },
+    {
+        "USUBJID": "Subject_070",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 12.42723376439579
+    },
+    {
+        "USUBJID": "Subject_071",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -2.9182231757352035
+    },
+    {
+        "USUBJID": "Subject_072",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 12.440401658276285
+    },
+    {
+        "USUBJID": "Subject_074",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -3.9087411071670415
+    },
+    {
+        "USUBJID": "Subject_075",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -0.6782380874608291
+    },
+    {
+        "USUBJID": "Subject_076",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 16.739120152607697
+    },
+    {
+        "USUBJID": "Subject_077",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -3.816661300647504
+    },
+    {
+        "USUBJID": "Subject_078",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 1.237317580287014
+    },
+    {
+        "USUBJID": "Subject_079",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -3.1276948256600647
+    },
+    {
+        "USUBJID": "Subject_080",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -7.849621218708039
+    },
+    {
+        "USUBJID": "Subject_081",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 12.892888802646947
+    },
+    {
+        "USUBJID": "Subject_082",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 12.743522179991473
+    },
+    {
+        "USUBJID": "Subject_083",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -12.334331026084186
+    },
+    {
+        "USUBJID": "Subject_084",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -4.1628887485953
+    },
+    {
+        "USUBJID": "Subject_085",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -11.52019980073143
+    },
+    {
+        "USUBJID": "Subject_086",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 13.83135182142239
+    },
+    {
+        "USUBJID": "Subject_087",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 14.454632477346218
+    },
+    {
+        "USUBJID": "Subject_088",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -5.823611138080514
+    },
+    {
+        "USUBJID": "Subject_089",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 13.015428553215042
+    },
+    {
+        "USUBJID": "Subject_090",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 4.189197833144005
+    },
+    {
+        "USUBJID": "Subject_091",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -4.8117001161658255
+    },
+    {
+        "USUBJID": "Subject_092",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 5.108106199353035
+    },
+    {
+        "USUBJID": "Subject_093",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -2.3544133790017554
+    },
+    {
+        "USUBJID": "Subject_094",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 18.135461478143725
+    },
+    {
+        "USUBJID": "Subject_095",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 11.399190233958002
+    },
+    {
+        "USUBJID": "Subject_096",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 0.5176941606716294
+    },
+    {
+        "USUBJID": "Subject_097",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -2.3376696424829495
+    },
+    {
+        "USUBJID": "Subject_098",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 5.086812184539962
+    },
+    {
+        "USUBJID": "Subject_099",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 8.74095164555862
+    },
+    {
+        "USUBJID": "Subject_001",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 0.9773250603712151
+    },
+    {
+        "USUBJID": "Subject_002",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 1.6901454241109883
+    },
+    {
+        "USUBJID": "Subject_003",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -0.24364465629898024
+    },
+    {
+        "USUBJID": "Subject_004",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 17.550455067118506
+    },
+    {
+        "USUBJID": "Subject_005",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 3.0423315432361067
+    },
+    {
+        "USUBJID": "Subject_006",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -3.820850651424488
+    },
+    {
+        "USUBJID": "Subject_007",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -6.6556969100340915
+    },
+    {
+        "USUBJID": "Subject_008",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -13.977430262484893
+    },
+    {
+        "USUBJID": "Subject_009",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -13.579708777941919
+    },
+    {
+        "USUBJID": "Subject_010",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -6.125430677415343
+    },
+    {
+        "USUBJID": "Subject_011",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 7.478530744496247
+    },
+    {
+        "USUBJID": "Subject_012",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -5.699085341317442
+    },
+    {
+        "USUBJID": "Subject_014",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 2.7938820040140397
+    },
+    {
+        "USUBJID": "Subject_015",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 2.7690024800252573
+    },
+    {
+        "USUBJID": "Subject_017",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 3.0939626415621078
+    },
+    {
+        "USUBJID": "Subject_018",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 2.5419156200754713
+    },
+    {
+        "USUBJID": "Subject_019",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -17.42259405792078
+    },
+    {
+        "USUBJID": "Subject_020",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -14.315060082282857
+    },
+    {
+        "USUBJID": "Subject_021",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 1.5261302697397676
+    },
+    {
+        "USUBJID": "Subject_022",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 4.304873836365736
+    },
+    {
+        "USUBJID": "Subject_023",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -13.12428625297653
+    },
+    {
+        "USUBJID": "Subject_024",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -1.9304075458070336
+    },
+    {
+        "USUBJID": "Subject_025",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -6.722468320431619
+    },
+    {
+        "USUBJID": "Subject_026",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 0.7655537078120096
+    },
+    {
+        "USUBJID": "Subject_028",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 2.8567519587441472
+    },
+    {
+        "USUBJID": "Subject_029",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -12.714044165034625
+    },
+    {
+        "USUBJID": "Subject_030",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -17.71977194692094
+    },
+    {
+        "USUBJID": "Subject_031",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -0.6468331473413533
+    },
+    {
+        "USUBJID": "Subject_032",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -0.02542139853563663
+    },
+    {
+        "USUBJID": "Subject_033",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -2.925244658986162
+    },
+    {
+        "USUBJID": "Subject_035",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -1.8550378095676252
+    },
+    {
+        "USUBJID": "Subject_036",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -11.044799925493507
+    },
+    {
+        "USUBJID": "Subject_037",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -2.3791610431429744
+    },
+    {
+        "USUBJID": "Subject_038",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 2.694287497006979
+    },
+    {
+        "USUBJID": "Subject_039",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -5.221974160691579
+    },
+    {
+        "USUBJID": "Subject_040",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -1.807631334421718
+    },
+    {
+        "USUBJID": "Subject_041",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -4.191233681839202
+    },
+    {
+        "USUBJID": "Subject_042",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -5.373466572637294
+    },
+    {
+        "USUBJID": "Subject_043",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -9.24219343513473
+    },
+    {
+        "USUBJID": "Subject_044",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -16.78707903975279
+    },
+    {
+        "USUBJID": "Subject_045",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -13.909147448227447
+    },
+    {
+        "USUBJID": "Subject_046",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -2.268827112643885
+    },
+    {
+        "USUBJID": "Subject_047",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 5.490603133479475
+    },
+    {
+        "USUBJID": "Subject_049",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -11.649025842615973
+    },
+    {
+        "USUBJID": "Subject_050",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -12.160721409928339
+    },
+    {
+        "USUBJID": "Subject_051",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 8.721627350077886
+    },
+    {
+        "USUBJID": "Subject_052",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -20.28381943163009
+    },
+    {
+        "USUBJID": "Subject_054",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 9.031005695791976
+    },
+    {
+        "USUBJID": "Subject_055",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -10.60151331299478
+    },
+    {
+        "USUBJID": "Subject_056",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -25.51047207004135
+    },
+    {
+        "USUBJID": "Subject_057",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -15.660272460805421
+    },
+    {
+        "USUBJID": "Subject_058",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -7.276325205725135
+    },
+    {
+        "USUBJID": "Subject_059",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -11.09764348997391
+    },
+    {
+        "USUBJID": "Subject_060",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -4.338891135633493
+    },
+    {
+        "USUBJID": "Subject_061",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -11.57190725421605
+    },
+    {
+        "USUBJID": "Subject_063",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -3.017598718377877
+    },
+    {
+        "USUBJID": "Subject_064",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -5.684240200254282
+    },
+    {
+        "USUBJID": "Subject_066",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 5.266129576609934
+    },
+    {
+        "USUBJID": "Subject_067",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 3.046036652159689
+    },
+    {
+        "USUBJID": "Subject_068",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -16.68202632621618
+    },
+    {
+        "USUBJID": "Subject_069",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -7.808059154674946
+    },
+    {
+        "USUBJID": "Subject_070",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -6.645346199568294
+    },
+    {
+        "USUBJID": "Subject_071",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -12.916942186063405
+    },
+    {
+        "USUBJID": "Subject_072",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 9.577422064154478
+    },
+    {
+        "USUBJID": "Subject_074",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -8.306101539296527
+    },
+    {
+        "USUBJID": "Subject_075",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -16.33843473637621
+    },
+    {
+        "USUBJID": "Subject_076",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -3.2907314436066626
+    },
+    {
+        "USUBJID": "Subject_077",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 0.8179777745490382
+    },
+    {
+        "USUBJID": "Subject_078",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -18.171312464996127
+    },
+    {
+        "USUBJID": "Subject_079",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -0.7720623738345056
+    },
+    {
+        "USUBJID": "Subject_080",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -9.16943830819252
+    },
+    {
+        "USUBJID": "Subject_081",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 7.016614376649519
+    },
+    {
+        "USUBJID": "Subject_082",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -7.568551539488681
+    },
+    {
+        "USUBJID": "Subject_083",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 3.6635097656772455
+    },
+    {
+        "USUBJID": "Subject_084",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 3.15035141506052
+    },
+    {
+        "USUBJID": "Subject_085",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 1.7128012544555942
+    },
+    {
+        "USUBJID": "Subject_086",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -4.673136672587528
+    },
+    {
+        "USUBJID": "Subject_087",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -1.6713461053891137
+    },
+    {
+        "USUBJID": "Subject_088",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -9.992807392653344
+    },
+    {
+        "USUBJID": "Subject_089",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -10.407495676577389
+    },
+    {
+        "USUBJID": "Subject_090",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -20.911865431782637
+    },
+    {
+        "USUBJID": "Subject_091",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -16.13637446786102
+    },
+    {
+        "USUBJID": "Subject_092",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -3.56761623358163
+    },
+    {
+        "USUBJID": "Subject_093",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -1.92980302907345
+    },
+    {
+        "USUBJID": "Subject_094",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -13.669606467909574
+    },
+    {
+        "USUBJID": "Subject_095",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -1.447981841800654
+    },
+    {
+        "USUBJID": "Subject_096",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -10.27498629629303
+    },
+    {
+        "USUBJID": "Subject_097",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -1.9303755477386644
+    },
+    {
+        "USUBJID": "Subject_098",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -5.134452885327661
+    },
+    {
+        "USUBJID": "Subject_099",
+        "VISIT": "Visit1",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -11.615682283521718
+    },
+    {
+        "USUBJID": "Subject_001",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -1.3501290905603565
+    },
+    {
+        "USUBJID": "Subject_002",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -9.568503356055547
+    },
+    {
+        "USUBJID": "Subject_003",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 17.049630888352034
+    },
+    {
+        "USUBJID": "Subject_004",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 14.444097715247716
+    },
+    {
+        "USUBJID": "Subject_005",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 7.069292186875203
+    },
+    {
+        "USUBJID": "Subject_006",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 2.7251094579794666
+    },
+    {
+        "USUBJID": "Subject_007",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 9.72062389975317
+    },
+    {
+        "USUBJID": "Subject_008",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -8.718292179388772
+    },
+    {
+        "USUBJID": "Subject_009",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 5.427976708835031
+    },
+    {
+        "USUBJID": "Subject_010",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 1.051271471560737
+    },
+    {
+        "USUBJID": "Subject_011",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 18.26601282201903
+    },
+    {
+        "USUBJID": "Subject_015",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 13.887738024189375
+    },
+    {
+        "USUBJID": "Subject_017",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 6.160260337506703
+    },
+    {
+        "USUBJID": "Subject_018",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 7.673981848491615
+    },
+    {
+        "USUBJID": "Subject_019",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 30.644352453218126
+    },
+    {
+        "USUBJID": "Subject_020",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 8.075541264154731
+    },
+    {
+        "USUBJID": "Subject_021",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 14.693244131171861
+    },
+    {
+        "USUBJID": "Subject_022",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -0.5402272498851932
+    },
+    {
+        "USUBJID": "Subject_023",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 6.951243949973136
+    },
+    {
+        "USUBJID": "Subject_024",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 37.146576125282856
+    },
+    {
+        "USUBJID": "Subject_026",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 9.656969235624912
+    },
+    {
+        "USUBJID": "Subject_028",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 25.559364550242385
+    },
+    {
+        "USUBJID": "Subject_029",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 4.131719303586166
+    },
+    {
+        "USUBJID": "Subject_030",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -0.7129236441990638
+    },
+    {
+        "USUBJID": "Subject_031",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 9.510746449702129
+    },
+    {
+        "USUBJID": "Subject_032",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -1.69946685141403
+    },
+    {
+        "USUBJID": "Subject_033",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -5.562334220742157
+    },
+    {
+        "USUBJID": "Subject_035",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -3.501623689105685
+    },
+    {
+        "USUBJID": "Subject_036",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 14.232012721847237
+    },
+    {
+        "USUBJID": "Subject_037",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 18.930536334079754
+    },
+    {
+        "USUBJID": "Subject_038",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 6.109346920461521
+    },
+    {
+        "USUBJID": "Subject_039",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 14.486710312616637
+    },
+    {
+        "USUBJID": "Subject_040",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 19.610272316792212
+    },
+    {
+        "USUBJID": "Subject_041",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 14.123209382382711
+    },
+    {
+        "USUBJID": "Subject_042",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -16.921014052559347
+    },
+    {
+        "USUBJID": "Subject_043",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 18.129101696140715
+    },
+    {
+        "USUBJID": "Subject_045",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 15.311468372521798
+    },
+    {
+        "USUBJID": "Subject_046",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 7.882121025021618
+    },
+    {
+        "USUBJID": "Subject_047",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 13.15889588116966
+    },
+    {
+        "USUBJID": "Subject_051",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -2.11306036374614
+    },
+    {
+        "USUBJID": "Subject_052",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 13.307162408672662
+    },
+    {
+        "USUBJID": "Subject_054",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 5.551315432880028
+    },
+    {
+        "USUBJID": "Subject_055",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 2.2864275002527927
+    },
+    {
+        "USUBJID": "Subject_057",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 10.951073932983444
+    },
+    {
+        "USUBJID": "Subject_058",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 1.3502373630257418
+    },
+    {
+        "USUBJID": "Subject_059",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 7.376961238098408
+    },
+    {
+        "USUBJID": "Subject_060",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -2.8989888806266944
+    },
+    {
+        "USUBJID": "Subject_061",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 5.669400982832696
+    },
+    {
+        "USUBJID": "Subject_063",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 7.9225532088901565
+    },
+    {
+        "USUBJID": "Subject_064",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 17.831317611967087
+    },
+    {
+        "USUBJID": "Subject_066",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 14.573507025443007
+    },
+    {
+        "USUBJID": "Subject_067",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 12.576439005819646
+    },
+    {
+        "USUBJID": "Subject_068",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 3.824198281906315
+    },
+    {
+        "USUBJID": "Subject_069",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -14.043094599771571
+    },
+    {
+        "USUBJID": "Subject_070",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 5.26792243437172
+    },
+    {
+        "USUBJID": "Subject_071",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 11.69786987438962
+    },
+    {
+        "USUBJID": "Subject_072",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 5.658485107847138
+    },
+    {
+        "USUBJID": "Subject_074",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -0.1375284667763932
+    },
+    {
+        "USUBJID": "Subject_075",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 22.1355603958851
+    },
+    {
+        "USUBJID": "Subject_076",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 3.868699992308424
+    },
+    {
+        "USUBJID": "Subject_077",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 10.023020405810911
+    },
+    {
+        "USUBJID": "Subject_078",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 10.484947450642343
+    },
+    {
+        "USUBJID": "Subject_079",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 16.490592361437784
+    },
+    {
+        "USUBJID": "Subject_080",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 14.580940965563368
+    },
+    {
+        "USUBJID": "Subject_081",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 13.903044184804855
+    },
+    {
+        "USUBJID": "Subject_082",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 13.467855527571608
+    },
+    {
+        "USUBJID": "Subject_083",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 16.32490778399343
+    },
+    {
+        "USUBJID": "Subject_084",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 4.144781273199786
+    },
+    {
+        "USUBJID": "Subject_085",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 7.408846572032305
+    },
+    {
+        "USUBJID": "Subject_086",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 0.3873356432799744
+    },
+    {
+        "USUBJID": "Subject_087",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 20.107034905198226
+    },
+    {
+        "USUBJID": "Subject_088",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 20.5140814255521
+    },
+    {
+        "USUBJID": "Subject_090",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 10.976566395671146
+    },
+    {
+        "USUBJID": "Subject_091",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 21.114410313585783
+    },
+    {
+        "USUBJID": "Subject_092",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 6.093489039645604
+    },
+    {
+        "USUBJID": "Subject_094",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -1.174591396794467
+    },
+    {
+        "USUBJID": "Subject_095",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 2.70233890315352
+    },
+    {
+        "USUBJID": "Subject_096",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 3.2195649312011065
+    },
+    {
+        "USUBJID": "Subject_097",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -2.758049658589533
+    },
+    {
+        "USUBJID": "Subject_098",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -7.295826381481044
+    },
+    {
+        "USUBJID": "Subject_099",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 7.28058255049423
+    },
+    {
+        "USUBJID": "Subject_001",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -1.2039183518786762
+    },
+    {
+        "USUBJID": "Subject_002",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -10.835239268390255
+    },
+    {
+        "USUBJID": "Subject_003",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -11.765473297675198
+    },
+    {
+        "USUBJID": "Subject_004",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -1.4009814765413697
+    },
+    {
+        "USUBJID": "Subject_005",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -7.703300316457094
+    },
+    {
+        "USUBJID": "Subject_006",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -15.2251575513739
+    },
+    {
+        "USUBJID": "Subject_007",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 7.282961496547083
+    },
+    {
+        "USUBJID": "Subject_008",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -14.052819574435881
+    },
+    {
+        "USUBJID": "Subject_009",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -13.84653970771873
+    },
+    {
+        "USUBJID": "Subject_010",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -7.0288761429200335
+    },
+    {
+        "USUBJID": "Subject_011",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -13.396670492668171
+    },
+    {
+        "USUBJID": "Subject_015",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -6.668341142047461
+    },
+    {
+        "USUBJID": "Subject_017",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -14.336340557458112
+    },
+    {
+        "USUBJID": "Subject_018",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 8.894840054294598
+    },
+    {
+        "USUBJID": "Subject_019",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -15.040610418726846
+    },
+    {
+        "USUBJID": "Subject_020",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -19.71817443258708
+    },
+    {
+        "USUBJID": "Subject_021",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -2.2956007755004784
+    },
+    {
+        "USUBJID": "Subject_022",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -9.618015180897933
+    },
+    {
+        "USUBJID": "Subject_023",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -11.565512481838516
+    },
+    {
+        "USUBJID": "Subject_024",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -4.826673495514088
+    },
+    {
+        "USUBJID": "Subject_026",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -15.90789427035785
+    },
+    {
+        "USUBJID": "Subject_028",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -7.8321386106385065
+    },
+    {
+        "USUBJID": "Subject_029",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -10.603382632562306
+    },
+    {
+        "USUBJID": "Subject_030",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -4.279910696392665
+    },
+    {
+        "USUBJID": "Subject_031",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -14.064893147327314
+    },
+    {
+        "USUBJID": "Subject_032",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -17.81030104172421
+    },
+    {
+        "USUBJID": "Subject_033",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -20.55791151892828
+    },
+    {
+        "USUBJID": "Subject_035",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -15.023008687271172
+    },
+    {
+        "USUBJID": "Subject_036",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -12.2819621481616
+    },
+    {
+        "USUBJID": "Subject_037",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -22.102608166344112
+    },
+    {
+        "USUBJID": "Subject_038",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 0.18790646585823723
+    },
+    {
+        "USUBJID": "Subject_039",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 3.3012521128201975
+    },
+    {
+        "USUBJID": "Subject_040",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -26.204866687862506
+    },
+    {
+        "USUBJID": "Subject_041",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -8.818448138673228
+    },
+    {
+        "USUBJID": "Subject_042",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -2.888695549570839
+    },
+    {
+        "USUBJID": "Subject_043",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -0.6298954025660484
+    },
+    {
+        "USUBJID": "Subject_045",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 3.737359954399736
+    },
+    {
+        "USUBJID": "Subject_046",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -11.2416110452123
+    },
+    {
+        "USUBJID": "Subject_047",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -23.454352030898693
+    },
+    {
+        "USUBJID": "Subject_051",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -20.48830609907734
+    },
+    {
+        "USUBJID": "Subject_052",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -10.405418757234042
+    },
+    {
+        "USUBJID": "Subject_054",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -13.035381714839026
+    },
+    {
+        "USUBJID": "Subject_055",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -17.318716187830802
+    },
+    {
+        "USUBJID": "Subject_057",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -14.799616354091938
+    },
+    {
+        "USUBJID": "Subject_058",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -3.4478979715484623
+    },
+    {
+        "USUBJID": "Subject_059",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -3.3029870401068067
+    },
+    {
+        "USUBJID": "Subject_060",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -14.646327362817757
+    },
+    {
+        "USUBJID": "Subject_061",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 3.7690643459572684
+    },
+    {
+        "USUBJID": "Subject_063",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -15.111128619116304
+    },
+    {
+        "USUBJID": "Subject_064",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -6.212779629126214
+    },
+    {
+        "USUBJID": "Subject_066",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -14.384772110170317
+    },
+    {
+        "USUBJID": "Subject_067",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -10.995189795881862
+    },
+    {
+        "USUBJID": "Subject_068",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -8.884280715910602
+    },
+    {
+        "USUBJID": "Subject_069",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -0.3538298965114395
+    },
+    {
+        "USUBJID": "Subject_070",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -6.2233678822182315
+    },
+    {
+        "USUBJID": "Subject_071",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 5.726463815362511
+    },
+    {
+        "USUBJID": "Subject_072",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -5.805514596593898
+    },
+    {
+        "USUBJID": "Subject_074",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 5.062029521306961
+    },
+    {
+        "USUBJID": "Subject_075",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -14.600068288644692
+    },
+    {
+        "USUBJID": "Subject_076",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -18.526428950974527
+    },
+    {
+        "USUBJID": "Subject_077",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 4.206044250451068
+    },
+    {
+        "USUBJID": "Subject_078",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -30.06894798143467
+    },
+    {
+        "USUBJID": "Subject_079",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -2.2362372833366067
+    },
+    {
+        "USUBJID": "Subject_080",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -8.88863952018047
+    },
+    {
+        "USUBJID": "Subject_081",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -1.2913156520964826
+    },
+    {
+        "USUBJID": "Subject_082",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -6.990218824793105
+    },
+    {
+        "USUBJID": "Subject_083",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -14.621867956712707
+    },
+    {
+        "USUBJID": "Subject_084",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -1.7666228283284315
+    },
+    {
+        "USUBJID": "Subject_085",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 6.429645894100801
+    },
+    {
+        "USUBJID": "Subject_086",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -3.110674755482272
+    },
+    {
+        "USUBJID": "Subject_087",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -7.053814062601644
+    },
+    {
+        "USUBJID": "Subject_088",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -24.835232206111215
+    },
+    {
+        "USUBJID": "Subject_090",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -24.2996733801163
+    },
+    {
+        "USUBJID": "Subject_091",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -16.997708714218753
+    },
+    {
+        "USUBJID": "Subject_092",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -15.521129654862268
+    },
+    {
+        "USUBJID": "Subject_094",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -8.056245015525432
+    },
+    {
+        "USUBJID": "Subject_095",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -13.435123819179998
+    },
+    {
+        "USUBJID": "Subject_096",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 8.536773250636752
+    },
+    {
+        "USUBJID": "Subject_097",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -13.227094861803767
+    },
+    {
+        "USUBJID": "Subject_098",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -17.599574762121637
+    },
+    {
+        "USUBJID": "Subject_099",
+        "VISIT": "Visit2",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -25.463200198979006
+    },
+    {
+        "USUBJID": "Subject_002",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 14.470962383522497
+    },
+    {
+        "USUBJID": "Subject_003",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 9.539965280664191
+    },
+    {
+        "USUBJID": "Subject_005",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 3.6721468857776234
+    },
+    {
+        "USUBJID": "Subject_006",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 15.256155910352652
+    },
+    {
+        "USUBJID": "Subject_007",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 11.38284283407076
+    },
+    {
+        "USUBJID": "Subject_008",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -1.3894610927529918
+    },
+    {
+        "USUBJID": "Subject_009",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -5.407617909541393
+    },
+    {
+        "USUBJID": "Subject_010",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 12.598378889724726
+    },
+    {
+        "USUBJID": "Subject_011",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 9.621866432683877
+    },
+    {
+        "USUBJID": "Subject_015",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 11.802480097908433
+    },
+    {
+        "USUBJID": "Subject_017",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -1.4583184804616298
+    },
+    {
+        "USUBJID": "Subject_018",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 20.380022060906544
+    },
+    {
+        "USUBJID": "Subject_021",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 25.542583231568436
+    },
+    {
+        "USUBJID": "Subject_022",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 7.9266998788550165
+    },
+    {
+        "USUBJID": "Subject_023",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 22.864894689987857
+    },
+    {
+        "USUBJID": "Subject_024",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 5.909550647025656
+    },
+    {
+        "USUBJID": "Subject_026",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 22.29883365836669
+    },
+    {
+        "USUBJID": "Subject_028",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 1.1513283809469979
+    },
+    {
+        "USUBJID": "Subject_029",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 16.738776276900786
+    },
+    {
+        "USUBJID": "Subject_030",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 5.913987756421893
+    },
+    {
+        "USUBJID": "Subject_031",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 12.047053141266495
+    },
+    {
+        "USUBJID": "Subject_032",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 2.609742499872585
+    },
+    {
+        "USUBJID": "Subject_033",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 11.315287028624558
+    },
+    {
+        "USUBJID": "Subject_035",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 14.927406809631734
+    },
+    {
+        "USUBJID": "Subject_036",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 6.51433618860743
+    },
+    {
+        "USUBJID": "Subject_037",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 18.308640853678938
+    },
+    {
+        "USUBJID": "Subject_038",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 19.920904979036877
+    },
+    {
+        "USUBJID": "Subject_039",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 7.032154780998112
+    },
+    {
+        "USUBJID": "Subject_040",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 15.960814540241953
+    },
+    {
+        "USUBJID": "Subject_041",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 6.857569957859252
+    },
+    {
+        "USUBJID": "Subject_042",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 5.076975023297928
+    },
+    {
+        "USUBJID": "Subject_043",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 1.8903272950865322
+    },
+    {
+        "USUBJID": "Subject_045",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 18.578952393661428
+    },
+    {
+        "USUBJID": "Subject_046",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 13.71851489432903
+    },
+    {
+        "USUBJID": "Subject_047",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 8.49951992219939
+    },
+    {
+        "USUBJID": "Subject_051",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 21.028908082286996
+    },
+    {
+        "USUBJID": "Subject_052",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 12.149468736384293
+    },
+    {
+        "USUBJID": "Subject_054",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 25.05784885305591
+    },
+    {
+        "USUBJID": "Subject_055",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 21.172560490948342
+    },
+    {
+        "USUBJID": "Subject_057",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 22.208371113211662
+    },
+    {
+        "USUBJID": "Subject_058",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 8.051413589917946
+    },
+    {
+        "USUBJID": "Subject_059",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 2.2491244041503453
+    },
+    {
+        "USUBJID": "Subject_060",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 8.058299965848002
+    },
+    {
+        "USUBJID": "Subject_063",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 10.465407630769988
+    },
+    {
+        "USUBJID": "Subject_064",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 29.99533893440464
+    },
+    {
+        "USUBJID": "Subject_066",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 17.79629767240811
+    },
+    {
+        "USUBJID": "Subject_068",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 13.903606329818103
+    },
+    {
+        "USUBJID": "Subject_070",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 17.72426084939512
+    },
+    {
+        "USUBJID": "Subject_071",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 10.52575134404853
+    },
+    {
+        "USUBJID": "Subject_072",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 22.074897200925246
+    },
+    {
+        "USUBJID": "Subject_074",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 16.587385372966573
+    },
+    {
+        "USUBJID": "Subject_075",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 18.070676903077434
+    },
+    {
+        "USUBJID": "Subject_076",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 18.035441101914508
+    },
+    {
+        "USUBJID": "Subject_077",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 12.47389680360945
+    },
+    {
+        "USUBJID": "Subject_078",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 20.47870043008143
+    },
+    {
+        "USUBJID": "Subject_079",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 7.26221997917441
+    },
+    {
+        "USUBJID": "Subject_080",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 22.350378042738484
+    },
+    {
+        "USUBJID": "Subject_081",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 13.700096435747817
+    },
+    {
+        "USUBJID": "Subject_082",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 23.390910216643658
+    },
+    {
+        "USUBJID": "Subject_083",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 18.078973627728825
+    },
+    {
+        "USUBJID": "Subject_084",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -9.692190366115224
+    },
+    {
+        "USUBJID": "Subject_085",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 16.211127027793243
+    },
+    {
+        "USUBJID": "Subject_086",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 3.9193631276289747
+    },
+    {
+        "USUBJID": "Subject_087",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 2.203585423158474
+    },
+    {
+        "USUBJID": "Subject_090",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 17.08545111087477
+    },
+    {
+        "USUBJID": "Subject_091",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 1.6897703256387562
+    },
+    {
+        "USUBJID": "Subject_092",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": -0.1003616478459044
+    },
+    {
+        "USUBJID": "Subject_094",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 19.586806428596205
+    },
+    {
+        "USUBJID": "Subject_095",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 5.699713971013064
+    },
+    {
+        "USUBJID": "Subject_096",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 17.262824869453794
+    },
+    {
+        "USUBJID": "Subject_098",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 7.783347217802338
+    },
+    {
+        "USUBJID": "Subject_099",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint1",
+        "AVAL": 16.73499816467773
+    },
+    {
+        "USUBJID": "Subject_002",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -17.614847007617726
+    },
+    {
+        "USUBJID": "Subject_003",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -5.658405658776264
+    },
+    {
+        "USUBJID": "Subject_005",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -5.806378540291691
+    },
+    {
+        "USUBJID": "Subject_006",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -15.283575307036193
+    },
+    {
+        "USUBJID": "Subject_007",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -15.937108781231261
+    },
+    {
+        "USUBJID": "Subject_008",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -19.827964140295908
+    },
+    {
+        "USUBJID": "Subject_009",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -13.740740277780539
+    },
+    {
+        "USUBJID": "Subject_010",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -14.529279401122595
+    },
+    {
+        "USUBJID": "Subject_011",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -16.359701301457445
+    },
+    {
+        "USUBJID": "Subject_015",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -23.681676130925375
+    },
+    {
+        "USUBJID": "Subject_017",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -20.086807356725934
+    },
+    {
+        "USUBJID": "Subject_018",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -12.866476256173328
+    },
+    {
+        "USUBJID": "Subject_021",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -16.79782813630578
+    },
+    {
+        "USUBJID": "Subject_022",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -20.485114389278465
+    },
+    {
+        "USUBJID": "Subject_023",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 3.8773856431732465
+    },
+    {
+        "USUBJID": "Subject_024",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -15.988329319902235
+    },
+    {
+        "USUBJID": "Subject_026",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -7.5995242645906815
+    },
+    {
+        "USUBJID": "Subject_028",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -19.902832926078798
+    },
+    {
+        "USUBJID": "Subject_029",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -9.848130006493491
+    },
+    {
+        "USUBJID": "Subject_030",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -8.46177888073837
+    },
+    {
+        "USUBJID": "Subject_031",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -16.02629516289106
+    },
+    {
+        "USUBJID": "Subject_032",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -8.863257453046492
+    },
+    {
+        "USUBJID": "Subject_033",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -12.873001100342396
+    },
+    {
+        "USUBJID": "Subject_035",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 1.346761245564803
+    },
+    {
+        "USUBJID": "Subject_036",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -16.65563777636179
+    },
+    {
+        "USUBJID": "Subject_037",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 5.512749419146175
+    },
+    {
+        "USUBJID": "Subject_038",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -4.772860351568895
+    },
+    {
+        "USUBJID": "Subject_039",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 0.999267393781686
+    },
+    {
+        "USUBJID": "Subject_040",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -20.132003873446173
+    },
+    {
+        "USUBJID": "Subject_041",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -13.031036668029968
+    },
+    {
+        "USUBJID": "Subject_042",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 4.605495589607855
+    },
+    {
+        "USUBJID": "Subject_043",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -13.506599773493567
+    },
+    {
+        "USUBJID": "Subject_045",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -17.87176386969046
+    },
+    {
+        "USUBJID": "Subject_046",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -6.642871585774779
+    },
+    {
+        "USUBJID": "Subject_047",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -19.36670606968452
+    },
+    {
+        "USUBJID": "Subject_051",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -4.060443892726177
+    },
+    {
+        "USUBJID": "Subject_052",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -16.21524446740255
+    },
+    {
+        "USUBJID": "Subject_054",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -22.36007576461094
+    },
+    {
+        "USUBJID": "Subject_055",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -28.24685662583364
+    },
+    {
+        "USUBJID": "Subject_057",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -17.842714645687913
+    },
+    {
+        "USUBJID": "Subject_058",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -11.743498389660957
+    },
+    {
+        "USUBJID": "Subject_059",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -21.490685867598664
+    },
+    {
+        "USUBJID": "Subject_060",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -12.504386045653808
+    },
+    {
+        "USUBJID": "Subject_063",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -8.470701971672364
+    },
+    {
+        "USUBJID": "Subject_064",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -16.63139814018535
+    },
+    {
+        "USUBJID": "Subject_066",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -9.965681664144457
+    },
+    {
+        "USUBJID": "Subject_068",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -27.428255980698665
+    },
+    {
+        "USUBJID": "Subject_070",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -15.868624969434212
+    },
+    {
+        "USUBJID": "Subject_071",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -24.114894467010252
+    },
+    {
+        "USUBJID": "Subject_072",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -2.730046467178175
+    },
+    {
+        "USUBJID": "Subject_074",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -10.486180339192368
+    },
+    {
+        "USUBJID": "Subject_075",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -17.071912859761934
+    },
+    {
+        "USUBJID": "Subject_076",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -25.703893943025776
+    },
+    {
+        "USUBJID": "Subject_077",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -28.53901843581995
+    },
+    {
+        "USUBJID": "Subject_078",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -11.761187784083429
+    },
+    {
+        "USUBJID": "Subject_079",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": 0.522907396740246
+    },
+    {
+        "USUBJID": "Subject_080",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -8.026191047630869
+    },
+    {
+        "USUBJID": "Subject_081",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -13.508800941411842
+    },
+    {
+        "USUBJID": "Subject_082",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -12.985743583680518
+    },
+    {
+        "USUBJID": "Subject_083",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -1.7190469121143863
+    },
+    {
+        "USUBJID": "Subject_084",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -12.497051076034303
+    },
+    {
+        "USUBJID": "Subject_085",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -6.378484794238891
+    },
+    {
+        "USUBJID": "Subject_086",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -29.18990132488744
+    },
+    {
+        "USUBJID": "Subject_087",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -20.945226556305848
+    },
+    {
+        "USUBJID": "Subject_090",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -1.2589559875065142
+    },
+    {
+        "USUBJID": "Subject_091",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -7.269035737167373
+    },
+    {
+        "USUBJID": "Subject_092",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -5.162286737295167
+    },
+    {
+        "USUBJID": "Subject_094",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -17.82360945201213
+    },
+    {
+        "USUBJID": "Subject_095",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -8.86037238647903
+    },
+    {
+        "USUBJID": "Subject_096",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -14.009637346954097
+    },
+    {
+        "USUBJID": "Subject_098",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -24.532213209124166
+    },
+    {
+        "USUBJID": "Subject_099",
+        "VISIT": "Visit3",
+        "PARAMCD": "Endpoint2",
+        "AVAL": -3.7608466122270396
+    }
+]

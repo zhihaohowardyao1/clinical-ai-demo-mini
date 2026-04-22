@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.11.0">
+<title>Primary Table | Clinical Trial Analytics + AI Demo</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-air,near-midnight.6e6037b3.css">
+<link rel="preload" as="style" href="./_observablehq/stdlib/inputs.ea9fd553.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-air,near-midnight.6e6037b3.css">
+<link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.ea9fd553.css">
+<link rel="modulepreload" href="./_observablehq/client.c9712b15.js">
+<link rel="modulepreload" href="./_observablehq/runtime.41a8479e.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.37bd6a7b.js">
+<link rel="modulepreload" href="./_import/components/demoData.842f79a9.js">
+<link rel="modulepreload" href="./_import/components/pagePager.006a4fa6.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/72f4716c.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/inputs.3fd59fc5.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/18cbf477.js">
+<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<script type="module">
+
+import {define} from "./_observablehq/client.c9712b15.js";
+import {registerFile} from "./_observablehq/stdlib.37bd6a7b.js";
+
+registerFile("./data/demo/adlbInputs.json", {"name":"./data/demo/adlbInputs.json","mimeType":"application/json","path":"./_file/data/demo/adlbInputs.cbd037a7.json","lastModified":1776825323227,"size":61});
+registerFile("./data/demo/masterData.json", {"name":"./data/demo/masterData.json","mimeType":"application/json","path":"./_file/data/demo/masterData.fdf475d9.json","lastModified":1776825323227,"size":87822});
+
+define({id: "54a608bd", inputs: ["FileAttachment"], outputs: ["buildDemoDataFlowNote","isValidAdlbInputs","isValidMasterData","loadStoredValue","renderPagePager","seededMasterData","seededAdlbInputs","masterState","adlbInputsState","data","adlbInputs","armA","armB"], body: async (FileAttachment) => {
+const [{buildDemoDataFlowNote, isValidAdlbInputs, isValidMasterData, loadStoredValue}, {renderPagePager}] = await Promise.all([import("./_import/components/demoData.842f79a9.js"), import("./_import/components/pagePager.006a4fa6.js")]);
+const seededMasterData = await FileAttachment("./data/demo/masterData.json").json();
+const seededAdlbInputs = await FileAttachment("./data/demo/adlbInputs.json").json();
+const masterState = loadStoredValue("masterData", seededMasterData);
+const adlbInputsState = loadStoredValue("adlbInputs", seededAdlbInputs);
+const data = isValidMasterData(masterState.value) ? masterState.value : seededMasterData;
+const adlbInputs = isValidAdlbInputs(adlbInputsState.value) ? adlbInputsState.value : seededAdlbInputs;
+const armA = data.filter((row) => row.TRTEMFL === "A").length;
+const armB = data.filter((row) => row.TRTEMFL === "B").length;
+return {buildDemoDataFlowNote,isValidAdlbInputs,isValidMasterData,loadStoredValue,renderPagePager,seededMasterData,seededAdlbInputs,masterState,adlbInputsState,data,adlbInputs,armA,armB};
+}});
+
+define({id: "9be05837", inputs: ["adlbInputs"], outputs: ["endpoints","visits"], body: (adlbInputs) => {
+const endpoints = Array.from({length: adlbInputs.endpoints}, (_, i) => `Endpoint${i + 1}`);
+const visits = Array.from({length: adlbInputs.visits}, (_, i) => `Visit${i}`);
+return {endpoints,visits};
+}});
+
+define({id: "f50fd6c9", outputs: ["mean","median","deviation","groupedWide","emptySummary","formatMeanSd","formatMedianMinMax","erf","normalCdf","welchTTest"], body: () => {
+function mean(values) {
+  return values.reduce((sum, value) => sum + value, 0) / values.length;
+}
+
+function median(values) {
+  const sorted = values.slice().sort((a, b) => a - b);
+  return sorted.length % 2
+    ? sorted[(sorted.length - 1) / 2]
+    : (sorted[sorted.length / 2 - 1] + sorted[sorted.length / 2]) / 2;
+}
+
+function deviation(values) {
+  if (values.length < 2) return 0;
+  const avg = mean(values);
+  const variance = values.reduce((sum, value) => sum + (value - avg) ** 2, 0) / (values.length - 1);
+  return Math.sqrt(variance);
+}
+
+function groupedWide(rows, dimension, valueKey) {
+  const grouped = new Map();
+  for (const row of rows) {
+    const key = row[dimension];
+    const value = row[valueKey];
+    if (value == null || Number.isNaN(Number(value))) continue;
+    if (!grouped.has(key)) grouped.set(key, []);
+    grouped.get(key).push(Number(value));
+  }
+  return new Map(Array.from(grouped, ([key, values]) => [
+    key,
+    {
+      n: values.length,
+      m: mean(values),
+      md: median(values),
+      sd: deviation(values),
+      min: Math.min(...values),
+      max: Math.max(...values),
+      values
+    }
+  ]));
+}
+
+function emptySummary() {
+  return {
+    n: 0,
+    m: 0,
+    md: 0,
+    sd: 0,
+    min: 0,
+    max: 0,
+    values: []
+  };
+}
+
+function formatMeanSd(summary) {
+  return summary.n ? `${summary.m.toFixed(1)} (${summary.sd.toFixed(2)})` : "-";
+}
+
+function formatMedianMinMax(summary) {
+  return summary.n ? `${summary.md.toFixed(1)} (${summary.min.toFixed(2)}; ${summary.max.toFixed(2)})` : "-";
+}
+
+function erf(x) {
+  const sign = x < 0 ? -1 : 1;
+  const a1 = 0.254829592;
+  const a2 = -0.284496736;
+  const a3 = 1.421413741;
+  const a4 = -1.453152027;
+  const a5 = 1.061405429;
+  const p = 0.3275911;
+  const absX = Math.abs(x);
+  const t = 1 / (1 + p * absX);
+  const y = 1 - (((((a5 * t + a4) * t + a3) * t + a2) * t + a1) * t * Math.exp(-absX * absX));
+  return sign * y;
+}
+
+function normalCdf(x) {
+  return 0.5 * (1 + erf(x / Math.sqrt(2)));
+}
+
+function welchTTest(sample1, sample2) {
+  if (!sample1.length || !sample2.length) {
+    return {
+      pValue: NaN,
+      se: NaN,
+      confidenceInterval: [NaN, NaN]
+    };
+  }
+  const mean1 = mean(sample1);
+  const mean2 = mean(sample2);
+  const var1 = deviation(sample1) ** 2;
+  const var2 = deviation(sample2) ** 2;
+  const n1 = sample1.length;
+  const n2 = sample2.length;
+  const se = Math.sqrt((var1 / n1) + (var2 / n2));
+  const t = se === 0 ? 0 : (mean1 - mean2) / se;
+  const pValue = 2 * (1 - normalCdf(Math.abs(t)));
+  const marginOfError = 1.96 * se;
+  return {
+    pValue,
+    se,
+    confidenceInterval: [mean1 - mean2 - marginOfError, mean1 - mean2 + marginOfError]
+  };
+}
+return {mean,median,deviation,groupedWide,emptySummary,formatMeanSd,formatMedianMinMax,erf,normalCdf,welchTTest};
+}});
+
+define({id: "a75a1f33", inputs: ["armA","armB","visits","groupedWide","data","endpointInput","emptySummary","formatMeanSd","formatMedianMinMax","welchTTest"], outputs: ["tableRows"], body: (armA,armB,visits,groupedWide,data,endpointInput,emptySummary,formatMeanSd,formatMedianMinMax,welchTTest) => {
+const tableRows = [
+  {label: "", armA: "TRTEMFL=A", armB: "TRTEMFL=B", className: "row-section"},
+  {label: "", armA: `(N=${armA})`, armB: `(N=${armB})`, className: "row-section"}
+];
+
+for (let i = 0; i < visits.length; i += 1) {
+  const visit = visits[i];
+  const baseSummary = groupedWide(data, "TRTEMFL", `${endpointInput}_${visit}`);
+  const groupA = baseSummary.get("A") ?? emptySummary();
+  const groupB = baseSummary.get("B") ?? emptySummary();
+
+  tableRows.push({label: "", armA: "", armB: "", className: "row-section"});
+  tableRows.push({label: visit === "Visit0" ? "Baseline" : visit, armA: "", armB: "", className: "row-section"});
+  tableRows.push({label: "N", armA: groupA?.n ?? 0, armB: groupB?.n ?? 0, className: "row-sub"});
+  tableRows.push({label: "Mean (SD)", armA: formatMeanSd(groupA), armB: formatMeanSd(groupB), className: "row-sub"});
+  tableRows.push({label: "Median (Min; Max)", armA: formatMedianMinMax(groupA), armB: formatMedianMinMax(groupB), className: "row-sub"});
+
+  if (visit !== "Visit0") {
+    const chgSummary = groupedWide(data, "TRTEMFL", `${endpointInput}_${visit}_CHG`);
+    const chgA = chgSummary.get("A") ?? emptySummary();
+    const chgB = chgSummary.get("B") ?? emptySummary();
+    const test = welchTTest(chgA.values, chgB.values);
+
+    tableRows.push({label: `Change from Baseline (${visit})`, armA: "", armB: "", className: "row-section"});
+    tableRows.push({label: "N", armA: chgA.n, armB: chgB.n, className: "row-sub"});
+    tableRows.push({label: "Mean (SD)", armA: formatMeanSd(chgA), armB: formatMeanSd(chgB), className: "row-sub"});
+    tableRows.push({label: "Median (Min; Max)", armA: formatMedianMinMax(chgA), armB: formatMedianMinMax(chgB), className: "row-sub"});
+    tableRows.push({label: `p-value (${visit}: Trt B - Trt A)`, armA: "", armB: Number.isFinite(test.pValue) ? test.pValue.toFixed(3) : "-", className: "row-sub"});
+    tableRows.push({label: "Diff of LS Means (SE)", armA: "", armB: Number.isFinite(test.se) ? `${(chgB.m - chgA.m).toFixed(1)} (${test.se.toFixed(2)})` : "-", className: "row-sub"});
+    tableRows.push({label: "95% CI", armA: "", armB: test.confidenceInterval.every(Number.isFinite) ? `(${test.confidenceInterval.map((value) => value.toFixed(1)).join("; ")})` : "-", className: "row-sub"});
+  }
+}
+return {tableRows};
+}});
+
+define({id: "29a82268", inputs: ["html"], outputs: ["renderPrimaryTable"], body: (html) => {
+function renderPrimaryTable(rows) {
+  const table = document.createElement("table");
+  table.className = "primary-table";
+
+  const tbody = document.createElement("tbody");
+  for (const row of rows) {
+    const tr = document.createElement("tr");
+    tr.className = row.className || "";
+
+    const td1 = document.createElement("td");
+    td1.textContent = row.label ?? "";
+    td1.className = "col-label";
+
+    const td2 = document.createElement("td");
+    td2.textContent = row.armA ?? "";
+    td2.className = "col-arm";
+
+    const td3 = document.createElement("td");
+    td3.textContent = row.armB ?? "";
+    td3.className = "col-arm";
+
+    tr.append(td1, td2, td3);
+    tbody.append(tr);
+  }
+
+  table.append(tbody);
+
+  const shell = html`<div class="primary-table-shell"></div>`;
+  shell.append(table);
+  return shell;
+}
+return {renderPrimaryTable};
+}});
+
+define({id: "c49f4511", inputs: ["view","Inputs","endpoints"], outputs: ["endpointInput"], body: (view,Inputs,endpoints) => {
+const endpointInput = view(Inputs.select(endpoints, {value: "Endpoint1", label: "Select Endpoint:"}));
+return {endpointInput};
+}});
+
+define({id: "9786ca0b", inputs: ["display","renderPrimaryTable","tableRows"], body: (display,renderPrimaryTable,tableRows) => {
+display(renderPrimaryTable(tableRows));
+}});
+
+define({id: "c0644409", inputs: ["display","renderPagePager"], body: (display,renderPagePager) => {
+display(renderPagePager("/Primary-Table"));
+}});
+
+</script>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">Clinical Trial Analytics + AI Demo</a></li>
+  </ol>
+  <section>
+    <summary class="observablehq-link"><a href="./Enrollment-Monitoring">Enrollment Workflow</a></summary>
+    <ol>
+    </ol>
+  </section>
+  <section>
+    <summary>Data Simulation</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./ADaM-Datasets">ADaM Datasets</a></li>
+    <li class="observablehq-link"><a href="./Master-Dataset">Master Dataset</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Analysis</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./Descriptive-Statistics">Descriptive Statistics</a></li>
+    <li class="observablehq-link"><a href="./Summerized-Information">Summarized Information</a></li>
+    <li class="observablehq-link"><a href="./Efficacy-Analyses">Efficacy Analyses</a></li>
+    </ol>
+  </section>
+  <section class="observablehq-section-active">
+    <summary>Submission Outputs</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./Demographic-Table">Demographic Table</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./Primary-Table">Primary Table</a></li>
+    <li class="observablehq-link"><a href="./Followup-Table">Visit Completion Table</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>AI Experience</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./ai/ai-study-explorer">AI Study Explorer</a></li>
+    <li class="observablehq-link"><a href="./ai/semantic-layer">Semantic Layer</a></li>
+    <li class="observablehq-link"><a href="./ai/query-routing">Query Routing</a></li>
+    <li class="observablehq-link"><a href="./ai/evaluation">Evaluation</a></li>
+    <li class="observablehq-link"><a href="./ai/architecture">Architecture</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary class="observablehq-link"><a href="./About-Author">About the Author</a></summary>
+    <ol>
+    </ol>
+  </section>
+</nav>
+<script>{Object.assign(document.createElement("a"),{href:""}).password&&location.replace(location.href);const e=document.querySelector("#observablehq-sidebar"),t=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?t.checked=r==="true":t.indeterminate=!0;for(const o of document.querySelectorAll("#observablehq-sidebar summary")){const s=o.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${o.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+</nav>
+</aside>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<div class="observablehq observablehq--block"><!--:54a608bd:--></div>
+<div class="observablehq observablehq--block"><!--:9be05837:--></div>
+<div class="observablehq observablehq--block"><!--:f50fd6c9:--></div>
+<div class="observablehq observablehq--block"><!--:a75a1f33:--></div>
+<div class="observablehq observablehq--block"><!--:29a82268:--></div>
+<h1 id="fda-submission-tables" tabindex="-1"><a class="observablehq-header-anchor" href="#fda-submission-tables">FDA Submission Tables</a></h1>
+<blockquote>
+<p>The FDA Submission Tables section is designed to streamline the preparation of FDA submission packages by automating the generation of essential statistical tables. These tables are critical for new drug or medical device approval and must adhere to strict regulatory guidelines. This platform ensures that all submission tables align with the FDA's required format and content standards, ensuring compliance and accuracy in regulatory submissions.</p>
+</blockquote>
+<ul>
+<li>Protocol: <code>CDISCDEMO01</code></li>
+<li>Population: <code>Intent-to-Treat</code></li>
+</ul>
+<h3 id="primary-table" tabindex="-1"><a class="observablehq-header-anchor" href="#primary-table">Primary Table</a></h3>
+<div class="observablehq observablehq--block"><!--:c49f4511:--></div>
+<div class="observablehq observablehq--block"><!--:9786ca0b:--></div>
+<div class="observablehq observablehq--block"><!--:c0644409:--></div>
+<style>
+.primary-table-shell {
+  margin: 2rem 0 2rem;
+}
+
+.primary-table {
+  width: 100%;
+  border-collapse: collapse;
+  font: 13px/1.2 var(--sans-serif);
+}
+
+.primary-table td {
+  padding: 3px 6.5px 3px 0;
+  border-bottom: 1px solid var(--theme-foreground-faintest);
+  text-align: center;
+  vertical-align: top;
+}
+
+.primary-table td.col-label {
+  text-align: left;
+  width: 38%;
+}
+
+.primary-table td.col-arm {
+  width: 31%;
+}
+
+.primary-table tr.row-section td {
+  font-weight: 700;
+  background: transparent;
+}
+
+.primary-table tr.row-sub td.col-label {
+  padding-left: 1.75rem;
+}
+
+h1 + blockquote {
+  max-width: 760px;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+h1 + blockquote p {
+  max-width: none;
+}
+
+blockquote + ul {
+  margin-top: 0;
+  margin-bottom: 3rem;
+  max-width: 760px;
+}
+
+h3 {
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+}
+
+.observablehq--block:has(> form) {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+</style>
+</main>
+</div>

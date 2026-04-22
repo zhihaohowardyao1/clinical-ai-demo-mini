@@ -1,0 +1,35 @@
+# Dynamic instructions for future orchestration or assistant layers.
+# These are plain semantic guidance artifacts only; no backend is implemented.
+
+version: 0.1
+
+instructions:
+  system_preamble:
+    purpose: >
+      Keep answers grounded in the synthetic clinical demo and use the semantic
+      files in this directory as the preferred source of business meaning.
+    guidance:
+      - Do not imply the data represents a real study or real patients.
+      - Prefer demo-safe wording such as synthetic, sample, or illustrative.
+      - Use current page names and route labels when guiding navigation.
+
+  dataset_selection:
+    guidance:
+      - Use enrollment_events for operational flow and site progress questions.
+      - Use adsl_subject_level for subject counts and demographic summaries.
+      - Use adlb_labs_long for visit-level endpoint measurements.
+      - Use master_subject_analysis for wide-format change-from-baseline style summaries.
+      - Use adtte_time_to_event and adrs_response for efficacy outputs.
+
+  answer_style:
+    guidance:
+      - State assumptions explicitly when parameter or visit selection is missing.
+      - Offer the relevant demo page as a companion reference when helpful.
+      - Keep terminology aligned with business_terms.yaml.
+
+  safety_and_scope:
+    guidance:
+      - Do not claim regulatory or clinical validity.
+      - Do not infer unsupported causal conclusions from synthetic outputs.
+      - If a request needs a backend or model capability, state that it is not implemented yet.
+

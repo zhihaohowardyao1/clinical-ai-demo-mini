@@ -1,0 +1,44 @@
+# Simple routing rules for future semantic query handling.
+# This file is intentionally lightweight and vendor-neutral.
+
+version: 0.1
+
+routing_rules:
+  - id: route_enrollment_questions
+    when:
+      any_terms: [enrollment, enrolled, randomized, roll-in, screen failure, screening, approval, approved, procedure, pending, site]
+    route_to:
+      domain: enrollment
+      datasets: [enrollment_events]
+      recommended_page: Enrollment-Monitoring
+
+  - id: route_demographic_questions
+    when:
+      any_terms: [demographic, age, sex, race, bmi, height, weight, arm]
+    route_to:
+      domain: demographics
+      datasets: [adsl_subject_level]
+      recommended_page: Demographic-Table
+
+  - id: route_lab_summary_questions
+    when:
+      any_terms: [visit, endpoint, aval, lab, baseline, change from baseline, summary]
+    route_to:
+      domain: lab_summaries
+      datasets: [adlb_labs_long, master_subject_analysis]
+      recommended_pages: [Descriptive-Statistics, Summerized-Information, Primary-Table]
+
+  - id: route_efficacy_questions
+    when:
+      any_terms: [efficacy, orr, response, pfs, time to event, survival, adtte, adrs]
+    route_to:
+      domain: efficacy_summaries
+      datasets: [adtte_time_to_event, adrs_response]
+      recommended_page: Efficacy-Analyses
+
+  - id: route_ambiguous_questions
+    when:
+      any_terms: [study, dataset, demo, help]
+    route_to:
+      domain: general_navigation
+      recommended_pages: [index, ai/ai-study-explorer]

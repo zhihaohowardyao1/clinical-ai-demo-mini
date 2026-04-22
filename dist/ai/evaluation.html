@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.11.0">
+<title>Evaluation | Clinical Trial Analytics + AI Demo</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="../_observablehq/theme-air,near-midnight.6e6037b3.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="../_observablehq/theme-air,near-midnight.6e6037b3.css">
+<link rel="modulepreload" href="../_observablehq/client.c9712b15.js">
+<link rel="modulepreload" href="../_observablehq/runtime.41a8479e.js">
+<link rel="modulepreload" href="../_observablehq/stdlib.37bd6a7b.js">
+<link rel="modulepreload" href="../_import/components/aiSection.9f9869a1.js">
+<link rel="modulepreload" href="../_import/components/pagePager.006a4fa6.js">
+<link rel="modulepreload" href="../_npm/htl@0.3.1/72f4716c.js">
+<link rel="icon" href="../_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<script type="module">
+
+import {define} from "../_observablehq/client.c9712b15.js";
+import {registerFile} from "../_observablehq/stdlib.37bd6a7b.js";
+
+registerFile("../data/eval/benchmark-questions.json", {"name":"../data/eval/benchmark-questions.json","mimeType":"application/json","path":"../_file/data/eval/benchmark-questions.545e7c9d.json","lastModified":1776825323229,"size":5118});
+
+define({id: "9ad1a2c1", inputs: ["FileAttachment","display"], outputs: ["createAIPageHero","createCallout","createCardGrid","createFlow","createStatGrid","createTableSection","ensureAISectionStyles","renderPagePager","benchmarks","totalCases","grouped","showcaseRows","root"], body: async (FileAttachment,display) => {
+const [{createAIPageHero, createCallout, createCardGrid, createFlow, createStatGrid, createTableSection, ensureAISectionStyles}, {renderPagePager}] = await Promise.all([import("../_import/components/aiSection.9f9869a1.js"), import("../_import/components/pagePager.006a4fa6.js")]);
+
+const benchmarks = await FileAttachment("../data/eval/benchmark-questions.json").json();
+const totalCases = benchmarks.length;
+const grouped = Array.from(
+  benchmarks.reduce((map, item) => {
+    const key = item.expected_intent;
+    map.set(key, (map.get(key) ?? 0) + 1);
+    return map;
+  }, new Map())
+).map(([intent, count]) => ({Domain: intent.replaceAll("_", " "), Questions: count}));
+const showcaseRows = benchmarks.slice(0, 8).map((item) => ({
+  ID: item.id,
+  Question: item.question,
+  Intent: item.expected_intent,
+  Dataset: item.expected_dataset,
+  Shape: item.expected_answer_shape
+}));
+
+ensureAISectionStyles();
+
+const root = document.createElement("div");
+root.className = "ai-section-page";
+
+root.append(
+  createAIPageHero({
+    kicker: "Quality + Safety",
+    title: "Evaluation",
+    summary:
+      "The public demo is intentionally constrained and tested. Evaluation focuses on whether the system routes questions correctly, selects the right dataset, preserves safe SQL boundaries, and returns an answer shape that matches the question in a way a visitor can understand.",
+    pills: ["22 benchmark questions", "Safety-aware", "Dataset selection tested", "Public-demo bounded"]
+  })
+);
+
+root.append(
+  createStatGrid([
+    {label: "Benchmark Questions", value: String(totalCases)},
+    {label: "Routing Coverage", value: "Enrollment to efficacy"},
+    {label: "Blocked Classes", value: "Safety + privacy + unsupported"},
+    {label: "Primary Goal", value: "Trustworthy demo behavior"}
+  ])
+);
+
+root.append(
+  createFlow([
+    {
+      title: "Benchmark a realistic public-demo question",
+      body: "Questions cover enrollment, demographics, labs, efficacy, and intentionally unsupported requests."
+    },
+    {
+      title: "Check routing and dataset selection",
+      body: "The system is scored on whether it lands in the expected domain and chooses a compatible dataset or view."
+    },
+    {
+      title: "Check answer shape and failure mode",
+      body: "The result should come back as a grouped table, single summary, blocked response, or other expected public-demo pattern."
+    },
+    {
+      title: "Keep safety visible",
+      body: "Unsafe or out-of-scope requests are blocked early, and empty-result behavior returns a helpful explanation rather than a confusing blank state."
+    }
+  ])
+);
+
+root.append(
+  createCardGrid([
+    {
+      title: "What This Evaluation Is Good At",
+      body:
+        "It is strong at checking whether the demo stays within its lane: correct routing, correct dataset selection, readable answer shapes, and safe handling of unsupported questions."
+    },
+    {
+      title: "What It Does Not Claim Yet",
+      body:
+        "It is not a production-grade model evaluation suite. The benchmark is curated and intentionally small because the goal is public-demo reliability, not exhaustive scientific coverage."
+    },
+    {
+      title: "Why This Matters In A Demo",
+      body:
+        "Evaluation is part of the product story. The AI section is stronger when visitors can see that questions are tested, bounded, and scored before wider rollout."
+    }
+  ])
+);
+
+root.append(
+  createTableSection({
+    title: "Coverage By Domain",
+    description: "The benchmark set spans supported domains and blocked cases.",
+    columns: ["Domain", "Questions"],
+    rows: grouped
+  })
+);
+
+root.append(
+  createTableSection({
+    title: "Benchmark Examples",
+    description: "Representative checks from the current public-demo benchmark set.",
+    columns: ["ID", "Question", "Intent", "Dataset", "Shape"],
+    rows: showcaseRows
+  })
+);
+
+root.append(
+  createCallout("What A Visitor Should Notice", [
+    "The Study Explorer shows the routing decision, selected dataset, generated SQL, result table, interpretation, and warnings.",
+    "The evaluation layer tests those same pieces instead of treating the answer text alone as success.",
+    "The system is designed to fail safely when a question is outside the supported public-demo scope."
+  ])
+);
+
+display(root);
+return {createAIPageHero,createCallout,createCardGrid,createFlow,createStatGrid,createTableSection,ensureAISectionStyles,renderPagePager,benchmarks,totalCases,grouped,showcaseRows,root};
+}});
+
+define({id: "93928d9f", inputs: ["display","renderPagePager"], body: (display,renderPagePager) => {
+display(renderPagePager("/ai/evaluation"));
+}});
+
+</script>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="../">Clinical Trial Analytics + AI Demo</a></li>
+  </ol>
+  <section>
+    <summary class="observablehq-link"><a href="../Enrollment-Monitoring">Enrollment Workflow</a></summary>
+    <ol>
+    </ol>
+  </section>
+  <section>
+    <summary>Data Simulation</summary>
+    <ol>
+    <li class="observablehq-link"><a href="../ADaM-Datasets">ADaM Datasets</a></li>
+    <li class="observablehq-link"><a href="../Master-Dataset">Master Dataset</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Analysis</summary>
+    <ol>
+    <li class="observablehq-link"><a href="../Descriptive-Statistics">Descriptive Statistics</a></li>
+    <li class="observablehq-link"><a href="../Summerized-Information">Summarized Information</a></li>
+    <li class="observablehq-link"><a href="../Efficacy-Analyses">Efficacy Analyses</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Submission Outputs</summary>
+    <ol>
+    <li class="observablehq-link"><a href="../Demographic-Table">Demographic Table</a></li>
+    <li class="observablehq-link"><a href="../Primary-Table">Primary Table</a></li>
+    <li class="observablehq-link"><a href="../Followup-Table">Visit Completion Table</a></li>
+    </ol>
+  </section>
+  <section class="observablehq-section-active">
+    <summary>AI Experience</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./ai-study-explorer">AI Study Explorer</a></li>
+    <li class="observablehq-link"><a href="./semantic-layer">Semantic Layer</a></li>
+    <li class="observablehq-link"><a href="./query-routing">Query Routing</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./evaluation">Evaluation</a></li>
+    <li class="observablehq-link"><a href="./architecture">Architecture</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary class="observablehq-link"><a href="../About-Author">About the Author</a></summary>
+    <ol>
+    </ol>
+  </section>
+</nav>
+<script>{Object.assign(document.createElement("a"),{href:""}).password&&location.replace(location.href);const e=document.querySelector("#observablehq-sidebar"),t=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?t.checked=r==="true":t.indeterminate=!0;for(const o of document.querySelectorAll("#observablehq-sidebar summary")){const s=o.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${o.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+</nav>
+</aside>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<div class="observablehq observablehq--block"><!--:9ad1a2c1:--></div>
+<div class="observablehq observablehq--block"><!--:93928d9f:--></div>
+</main>
+</div>

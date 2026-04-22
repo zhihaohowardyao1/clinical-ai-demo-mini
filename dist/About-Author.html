@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.11.0">
+<title>About the Author | Clinical Trial Analytics + AI Demo</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-air,near-midnight.6e6037b3.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-air,near-midnight.6e6037b3.css">
+<link rel="modulepreload" href="./_observablehq/client.c9712b15.js">
+<link rel="modulepreload" href="./_observablehq/runtime.41a8479e.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.37bd6a7b.js">
+<link rel="modulepreload" href="./_import/components/pagePager.006a4fa6.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/72f4716c.js">
+<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<script type="module">
+
+import {define} from "./_observablehq/client.c9712b15.js";
+import {registerFile} from "./_observablehq/stdlib.37bd6a7b.js";
+
+registerFile("./legacy/_file/img/profilePicture.4b4496a1.jpeg", {"name":"./legacy/_file/img/profilePicture.4b4496a1.jpeg","mimeType":"image/jpeg","path":"./_file/legacy/_file/img/profilePicture.4b4496a1.4b4496a1.jpeg","lastModified":1776825323239,"size":29282});
+
+define({id: "a545853f", inputs: ["FileAttachment"], outputs: ["renderPagePager","profilePictureUrl"], body: async (FileAttachment) => {
+const {renderPagePager} = await import("./_import/components/pagePager.006a4fa6.js");
+
+const profilePictureUrl = await FileAttachment("./legacy/_file/img/profilePicture.4b4496a1.jpeg").url();
+return {renderPagePager,profilePictureUrl};
+}});
+
+define({id: "9492ab6b", inputs: ["display","html","profilePictureUrl"], body: (display,html,profilePictureUrl) => {
+display(html`<div class="author-hero">
+  <div id="login-container">
+    <img class="profile-img" src="${profilePictureUrl}" alt="Zhihao (Howard) Yao">
+    <h3>Zhihao (Howard) Yao</h3>
+    <div class="description">
+      A skilled data scientist with over 15 years of expertise in data management, analytics, and visualization, bringing a unique combination of government experience as a mathematical statistician at the FDA and industry experience as a Senior Principal Data Scientist at a leading medical device company.
+      <br><br>
+      Proven ability to deliver impactful insights and drive data-driven decisions across diverse environments. This diverse expertise spans across regulatory settings and industry-driven innovation, consistently applying advanced analytics to inform critical decision-making.
+    </div>
+    <div class="social">
+      <a href="https://zhihaohowardyao.github.io/" target="_blank" rel="noopener noreferrer">Personal Website</a>
+      <a href="https://www.linkedin.com/in/zhihaohowardyao/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </div>
+</div>`);
+}});
+
+define({id: "ad92f565", inputs: ["display","renderPagePager"], body: (display,renderPagePager) => {
+display(renderPagePager("/About-Author"));
+}});
+
+</script>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">Clinical Trial Analytics + AI Demo</a></li>
+  </ol>
+  <section>
+    <summary class="observablehq-link"><a href="./Enrollment-Monitoring">Enrollment Workflow</a></summary>
+    <ol>
+    </ol>
+  </section>
+  <section>
+    <summary>Data Simulation</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./ADaM-Datasets">ADaM Datasets</a></li>
+    <li class="observablehq-link"><a href="./Master-Dataset">Master Dataset</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Analysis</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./Descriptive-Statistics">Descriptive Statistics</a></li>
+    <li class="observablehq-link"><a href="./Summerized-Information">Summarized Information</a></li>
+    <li class="observablehq-link"><a href="./Efficacy-Analyses">Efficacy Analyses</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Submission Outputs</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./Demographic-Table">Demographic Table</a></li>
+    <li class="observablehq-link"><a href="./Primary-Table">Primary Table</a></li>
+    <li class="observablehq-link"><a href="./Followup-Table">Visit Completion Table</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>AI Experience</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./ai/ai-study-explorer">AI Study Explorer</a></li>
+    <li class="observablehq-link"><a href="./ai/semantic-layer">Semantic Layer</a></li>
+    <li class="observablehq-link"><a href="./ai/query-routing">Query Routing</a></li>
+    <li class="observablehq-link"><a href="./ai/evaluation">Evaluation</a></li>
+    <li class="observablehq-link"><a href="./ai/architecture">Architecture</a></li>
+    </ol>
+  </section>
+  <section class="observablehq-section-active">
+    <summary class="observablehq-link observablehq-link-active"><a href="./About-Author">About the Author</a></summary>
+    <ol>
+    </ol>
+  </section>
+</nav>
+<script>{Object.assign(document.createElement("a"),{href:""}).password&&location.replace(location.href);const e=document.querySelector("#observablehq-sidebar"),t=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?t.checked=r==="true":t.indeterminate=!0;for(const o of document.querySelectorAll("#observablehq-sidebar summary")){const s=o.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${o.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+<div>Contents</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#demo-projects-portfolio">Demo Projects Portfolio</a></li>
+</ol>
+</nav>
+</aside>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<div class="observablehq observablehq--block"><!--:a545853f:--></div>
+<h1 id="about-the-author" tabindex="-1"><a class="observablehq-header-anchor" href="#about-the-author">About the Author</a></h1>
+<hr>
+<div class="observablehq observablehq--block"><!--:9492ab6b:--></div>
+<h2 id="demo-projects-portfolio" tabindex="-1"><a class="observablehq-header-anchor" href="#demo-projects-portfolio">Demo Projects Portfolio</a></h2>
+<h3 id="statistics-likelihood-ratio-based-tests-for-drug-device-data-monitoring" tabindex="-1"><a class="observablehq-header-anchor" href="#statistics-likelihood-ratio-based-tests-for-drug-device-data-monitoring">Statistics | Likelihood Ratio-Based Tests for Drug/Device Data Monitoring</a></h3>
+<div class="grid grid-cols-4" style="grid-auto-rows: auto;">
+  <div class="card"><a href="https://www.kaggle.com/code/howardyao/deming-conference-lrt-presentation" target="_blank" rel="noopener noreferrer">Likelihood Ratio-Based Test (LRT) Method</a><br><br>Introduces core LRT ideas and applications to drug/device post-market safety surveillance.</div>
+  <div class="card"><a href="https://observablehq.com/@howardyao/lrt-method-application-part-1" target="_blank" rel="noopener noreferrer">LRT Application Part 1: Data Wrangling</a><br><br>Creates an adverse events data frame for further LRT analysis from FAERS JSON inputs.</div>
+  <div class="card"><a href="https://observablehq.com/@howardyao/lrt-method-application-part-2" target="_blank" rel="noopener noreferrer">LRT Application Part 2: Signal Detection and Visualization</a><br><br>Shows how the LRT method retains good power and sensitivity for identifying safety signals.</div>
+  <div class="card"><a href="https://observablehq.com/@howardyao/lrt-method-application-part-2" target="_blank" rel="noopener noreferrer">LRT Signal Analysis Application</a><br><br>An interactive LRT analysis application with dynamic parameters such as drug name, date range, and event limits.</div>
+</div>
+<h3 id="statistics-propensity-score" tabindex="-1"><a class="observablehq-header-anchor" href="#statistics-propensity-score">Statistics | Propensity Score</a></h3>
+<div class="grid grid-cols-4" style="grid-auto-rows: auto;">
+  <div class="card"><a href="https://observablehq.com/@howardyao/stat-notes-leveraging-external-evidence-for-augmenting-cl?collection=@howardyao/stat-notes" target="_blank" rel="noopener noreferrer">Leveraging External Evidence for Augmenting Clinical Study</a><br><br>Explores propensity-score-integrated approaches for leveraging real-world data in clinical studies.</div>
+  <div class="card"><a href="https://observablehq.com/@howardyao/propensity-score-r-package-matchit-introduction?collection=@howardyao/stat-notes" target="_blank" rel="noopener noreferrer">Propensity Score R Package MatchIt Introduction</a><br><br>A practical introduction to MatchIt for covariate balance in observational studies.</div>
+</div>
+<h3 id="machine-learning" tabindex="-1"><a class="observablehq-header-anchor" href="#machine-learning">Machine Learning</a></h3>
+<div class="grid grid-cols-4" style="grid-auto-rows: auto;">
+  <div class="card"><a href="https://observablehq.com/@howardyao/machine-learning-notes-1?collection=@howardyao/machine-learning-notes" target="_blank" rel="noopener noreferrer">ML | 1 Introduction, Math, and Statistics</a><br><br>Frequentist vs Bayesian, MLE, and core statistics concepts.</div>
+  <div class="card"><a href="https://observablehq.com/@howardyao/machine-learning-notes-2?collection=@howardyao/machine-learning-notes" target="_blank" rel="noopener noreferrer">ML | 2 Linear Regression</a><br><br>Least squares, regularization, and MAP estimation.</div>
+  <div class="card"><a href="https://observablehq.com/@howardyao/ml-3-linear-classification-3-1?collection=@howardyao/machine-learning-notes" target="_blank" rel="noopener noreferrer">ML | 3.1 Linear Classification</a><br><br>Perceptron, LDA, loss functions, and gradient descent.</div>
+  <div class="card"><a href="https://observablehq.com/@howardyao/ml-7-ensemble-learning?collection=@howardyao/machine-learning-notes" target="_blank" rel="noopener noreferrer">ML | 7 Ensemble Learning</a><br><br>Bagging, boosting, AdaBoost, and gradient boosting.</div>
+</div>
+<h3 id="visualization" tabindex="-1"><a class="observablehq-header-anchor" href="#visualization">Visualization</a></h3>
+<div class="grid grid-cols-4" style="grid-auto-rows: auto;">
+  <div class="card"><a href="https://observablehq.com/@howardyao/visualization-selection-diagram" target="_blank" rel="noopener noreferrer">Visualization Selection Diagram</a><br><br>Maps common chart types to distribution, relationship, composition, and comparison tasks.</div>
+  <div class="card"><a href="https://observablehq.com/@howardyao/covid-19-global-dataset-visualization" target="_blank" rel="noopener noreferrer">Covid-19 Global Dataset Visualization</a><br><br>A ridgeline plot dashboard showing how dynamic interaction can improve dense visual summaries.</div>
+  <div class="card"><a href="https://observablehq.com/@howardyao/sequence-alignment-dashboard" target="_blank" rel="noopener noreferrer">Sequence Alignment Dashboard</a><br><br>An interactive protein sequence alignment dashboard with minimap and consensus support.</div>
+  <div class="card"><a href="https://observablehq.com/@howardyao/2021-top-30-medical-device-companies" target="_blank" rel="noopener noreferrer">Top 30 Medical Device Companies</a><br><br>A visual breakdown of revenue, profit, and scale metrics for major medical device companies.</div>
+</div>
+<div class="observablehq observablehq--block"><!--:ad92f565:--></div>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto|Sriracha&display=swap');
+
+.author-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0 5rem;
+  text-wrap: balance;
+  text-align: center;
+}
+
+#login-container {
+  position: relative;
+  width: min(760px, calc(100vw - 5rem));
+  min-height: 360px;
+  margin: 0 auto;
+  padding: 1.5rem 2.5rem 2rem 2.5rem;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #fffffb;
+  box-shadow: 6px 10px 16px rgba(0, 0, 0, 0.22);
+}
+
+.profile-img {
+  position: absolute;
+  top: -42px;
+  left: -42px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 15px rgba(100, 100, 100, 0.1);
+}
+
+#login-container h3 {
+  padding-top: 0.5rem;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Roboto", var(--sans-serif);
+}
+
+.description {
+  margin: 2rem auto 0;
+  max-width: 38rem;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+  font-family: "Roboto", var(--sans-serif);
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin-top: 1.75rem;
+}
+
+.social a {
+  display: inline-block;
+  min-width: 200px;
+  padding: 0.7rem 1rem;
+  border: 2px solid #3b5fc0;
+  border-radius: 6px;
+  font-family: "Roboto", var(--sans-serif);
+  font-size: 16px;
+}
+
+.social a:hover {
+  background: #3b5fc0;
+  color: white;
+  text-decoration: none;
+}
+</style>
+</main>
+</div>

@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: clinical-observable-phase2-ai
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MODEL_PROVIDER
+        value: auto
+      - key: LIVE_PROVIDER_KIND
+        value: openai_compatible
+      - key: LLM_MODEL
+        value: gpt-4.1-mini
+      - key: LLM_FALLBACK_TO_MOCK
+        value: "true"
+      - key: LLM_API_URL
+        sync: false
+      - key: LLM_API_KEY
+        sync: false

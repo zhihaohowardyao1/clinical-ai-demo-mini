@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.11.0">
+<title>AI Study Explorer | Clinical Trial Analytics + AI Demo</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="../_observablehq/theme-air,near-midnight.6e6037b3.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="../_observablehq/theme-air,near-midnight.6e6037b3.css">
+<link rel="modulepreload" href="../_observablehq/client.c9712b15.js">
+<link rel="modulepreload" href="../_observablehq/runtime.41a8479e.js">
+<link rel="modulepreload" href="../_observablehq/stdlib.37bd6a7b.js">
+<link rel="modulepreload" href="../_import/components/aiStudyExplorer.0a2d17b2.js">
+<link rel="modulepreload" href="../_import/components/pagePager.006a4fa6.js">
+<link rel="modulepreload" href="../_npm/htl@0.3.1/72f4716c.js">
+<link rel="icon" href="../_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<script type="module">
+
+import {define} from "../_observablehq/client.c9712b15.js";
+
+define({id: "41a3e97a", inputs: ["display"], outputs: ["createAIStudyExplorer","renderPagePager"], body: async (display) => {
+const [{createAIStudyExplorer}, {renderPagePager}] = await Promise.all([import("../_import/components/aiStudyExplorer.0a2d17b2.js"), import("../_import/components/pagePager.006a4fa6.js")]);
+display(createAIStudyExplorer())
+return {createAIStudyExplorer,renderPagePager};
+}});
+
+define({id: "6b331bbd", inputs: ["display","renderPagePager"], body: (display,renderPagePager) => {
+display(renderPagePager("/ai/ai-study-explorer"));
+}});
+
+</script>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="../">Clinical Trial Analytics + AI Demo</a></li>
+  </ol>
+  <section>
+    <summary class="observablehq-link"><a href="../Enrollment-Monitoring">Enrollment Workflow</a></summary>
+    <ol>
+    </ol>
+  </section>
+  <section>
+    <summary>Data Simulation</summary>
+    <ol>
+    <li class="observablehq-link"><a href="../ADaM-Datasets">ADaM Datasets</a></li>
+    <li class="observablehq-link"><a href="../Master-Dataset">Master Dataset</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Analysis</summary>
+    <ol>
+    <li class="observablehq-link"><a href="../Descriptive-Statistics">Descriptive Statistics</a></li>
+    <li class="observablehq-link"><a href="../Summerized-Information">Summarized Information</a></li>
+    <li class="observablehq-link"><a href="../Efficacy-Analyses">Efficacy Analyses</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Submission Outputs</summary>
+    <ol>
+    <li class="observablehq-link"><a href="../Demographic-Table">Demographic Table</a></li>
+    <li class="observablehq-link"><a href="../Primary-Table">Primary Table</a></li>
+    <li class="observablehq-link"><a href="../Followup-Table">Visit Completion Table</a></li>
+    </ol>
+  </section>
+  <section class="observablehq-section-active">
+    <summary>AI Experience</summary>
+    <ol>
+    <li class="observablehq-link observablehq-link-active"><a href="./ai-study-explorer">AI Study Explorer</a></li>
+    <li class="observablehq-link"><a href="./semantic-layer">Semantic Layer</a></li>
+    <li class="observablehq-link"><a href="./query-routing">Query Routing</a></li>
+    <li class="observablehq-link"><a href="./evaluation">Evaluation</a></li>
+    <li class="observablehq-link"><a href="./architecture">Architecture</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary class="observablehq-link"><a href="../About-Author">About the Author</a></summary>
+    <ol>
+    </ol>
+  </section>
+</nav>
+<script>{Object.assign(document.createElement("a"),{href:""}).password&&location.replace(location.href);const e=document.querySelector("#observablehq-sidebar"),t=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?t.checked=r==="true":t.indeterminate=!0;for(const o of document.querySelectorAll("#observablehq-sidebar summary")){const s=o.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${o.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+</nav>
+</aside>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<div class="observablehq observablehq--block"><!--:41a3e97a:--></div>
+<div class="observablehq observablehq--block"><!--:6b331bbd:--></div>
+</main>
+</div>

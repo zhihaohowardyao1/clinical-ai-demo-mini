@@ -1,0 +1,14 @@
+{
+    "enrollment": 100,
+    "sex": 0.55,
+    "age1": 40,
+    "age2": 80,
+    "height1": 140,
+    "height2": 190,
+    "weight1": 35,
+    "weight2": 105,
+    "bmi1": 15,
+    "bmi2": 38,
+    "flg1": 0.2,
+    "trt": 0.5
+}

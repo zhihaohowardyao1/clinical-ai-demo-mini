@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.11.0">
+<title>Semantic Layer | Clinical Trial Analytics + AI Demo</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="../_observablehq/theme-air,near-midnight.6e6037b3.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="../_observablehq/theme-air,near-midnight.6e6037b3.css">
+<link rel="modulepreload" href="../_observablehq/client.c9712b15.js">
+<link rel="modulepreload" href="../_observablehq/runtime.41a8479e.js">
+<link rel="modulepreload" href="../_observablehq/stdlib.37bd6a7b.js">
+<link rel="modulepreload" href="../_import/components/aiSection.9f9869a1.js">
+<link rel="modulepreload" href="../_import/components/pagePager.006a4fa6.js">
+<link rel="modulepreload" href="../_npm/htl@0.3.1/72f4716c.js">
+<link rel="icon" href="../_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<script type="module">
+
+import {define} from "../_observablehq/client.c9712b15.js";
+
+define({id: "2ebf32a5", inputs: ["display"], outputs: ["createAIPageHero","createCallout","createCardGrid","createFlow","createStatGrid","createTableSection","ensureAISectionStyles","renderPagePager","root"], body: async (display) => {
+const [{createAIPageHero, createCallout, createCardGrid, createFlow, createStatGrid, createTableSection, ensureAISectionStyles}, {renderPagePager}] = await Promise.all([import("../_import/components/aiSection.9f9869a1.js"), import("../_import/components/pagePager.006a4fa6.js")]);
+
+ensureAISectionStyles();
+
+const root = document.createElement("div");
+root.className = "ai-section-page";
+
+root.append(
+  createAIPageHero({
+    kicker: "AI Foundations",
+    title: "Semantic Layer",
+    summary:
+      "The semantic layer translates synthetic clinical data into public-demo language. It gives the AI experience stable names for datasets, metrics, business terms, and example questions so a plain-language question can become an explainable answer without exposing visitors to raw source complexity.",
+    pills: ["Vendor-neutral", "Synthetic-only", "Human-readable", "Supports routing + SQL"]
+  })
+);
+
+root.append(
+  createStatGrid([
+    {label: "Semantic Files", value: "7"},
+    {label: "Demo Domains", value: "4"},
+    {label: "AI Views", value: "5"},
+    {label: "Primary Use", value: "Question grounding"}
+  ])
+);
+
+root.append(
+  createCardGrid([
+    {
+      title: "What This Means For A Visitor",
+      body:
+        "A visitor does not need to know raw field names like TRTEMFL or ADLB. The semantic layer gives the AI experience readable concepts such as treatment arm, objective response rate, lab summary, and enrollment status."
+    },
+    {
+      title: "What It Means For The Demo",
+      body:
+        "The same semantic contract supports dataset selection, query routing, generated SQL prompts, and interpretation text. That keeps the public demo coherent across pages instead of making each answer feel handcrafted."
+    },
+    {
+      title: "Why It Is Safe To Show Publicly",
+      body:
+        "The definitions are grounded in synthetic study content only. They are realistic enough to explain the product, but they do not claim to represent real subjects, real outcomes, or production governance."
+    }
+  ])
+);
+
+root.append(
+  createFlow([
+    {
+      title: "User question enters in natural language",
+      body: "The demo receives a plain-language question such as ORR by arm, average age by sex, or mean Endpoint1 change at Visit2."
+    },
+    {
+      title: "Business terms anchor the intent",
+      body: "The semantic layer maps phrases like treatment arm, responder, or visit to stable project vocabulary."
+    },
+    {
+      title: "Datasets and metrics narrow the query space",
+      body: "The backend chooses a view and a small set of relevant metrics, columns, and example questions."
+    },
+    {
+      title: "Explainable answer stays traceable",
+      body: "The selected dataset, routing decision, generated SQL, result table, and interpretation all stay aligned to the same semantic contract."
+    }
+  ])
+);
+
+root.append(
+  createTableSection({
+    title: "Semantic Catalog",
+    description: "These files work together to make the AI area understandable, routable, and demo-safe.",
+    columns: ["File", "Role", "Public-Demo Value"],
+    rows: [
+      {File: "datasets.yaml", Role: "Logical catalog of available data assets", "Public-Demo Value": "Shows what each dataset represents and at what grain it can answer questions."},
+      {File: "business_terms.yaml", Role: "Human-facing vocabulary", "Public-Demo Value": "Connects study language to technical fields without exposing visitors to raw source complexity."},
+      {File: "metric_definitions.yaml", Role: "Reusable metric meanings", "Public-Demo Value": "Keeps ORR, enrolled count, age summaries, and other measures consistent across pages."},
+      {File: "sql_expressions.yaml", Role: "Reference logic patterns", "Public-Demo Value": "Documents how readable concepts such as treatment arm or baseline flags map into query logic."},
+      {File: "example_queries.yaml", Role: "Prompt-to-answer examples", "Public-Demo Value": "Helps the explorer stay understandable by showing the kinds of questions the demo is built to answer."},
+      {File: "routing_rules.yaml", Role: "Intent routing guidance", "Public-Demo Value": "Supports the visible routing decision shown in the Study Explorer."},
+      {File: "dynamic_instructions.yaml", Role: "Answer-style and safety rules", "Public-Demo Value": "Keeps generated answers public-demo friendly, bounded, and readable."}
+    ]
+  })
+);
+
+root.append(
+  createTableSection({
+    title: "Core Semantic Targets",
+    description: "The current demo keeps scope intentionally narrow so the explainable flow is easy to understand.",
+    columns: ["Domain", "Typical Questions", "Primary View", "Example Output"],
+    rows: [
+      {Domain: "Enrollment", "Typical Questions": "How many subjects are approved, pending, or randomized by site?", "Primary View": "enrollment_status_view", "Example Output": "Grouped status table"},
+      {Domain: "Demographics", "Typical Questions": "What is average age by sex or treatment arm?", "Primary View": "subject_summary_view", "Example Output": "Grouped summary table"},
+      {Domain: "Labs", "Typical Questions": "What is the average Endpoint1 change from baseline at Visit2?", "Primary View": "lab_long_view", "Example Output": "Visit-level summary"},
+      {Domain: "Efficacy", "Typical Questions": "What is the synthetic ORR by treatment arm?", "Primary View": "efficacy_summary_view", "Example Output": "Rate summary or grouped table"}
+    ]
+  })
+);
+
+root.append(
+  createCallout("What To Look For In The AI Demo", [
+    "The selected dataset card shows which semantic target answered the question.",
+    "The routing decision explains why the question landed in enrollment, demographics, labs, or efficacy.",
+    "The SQL preview stays readable because the semantic layer narrows the allowed query space before generation."
+  ])
+);
+
+display(root);
+return {createAIPageHero,createCallout,createCardGrid,createFlow,createStatGrid,createTableSection,ensureAISectionStyles,renderPagePager,root};
+}});
+
+define({id: "63211b64", inputs: ["display","renderPagePager"], body: (display,renderPagePager) => {
+display(renderPagePager("/ai/semantic-layer"));
+}});
+
+</script>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="../">Clinical Trial Analytics + AI Demo</a></li>
+  </ol>
+  <section>
+    <summary class="observablehq-link"><a href="../Enrollment-Monitoring">Enrollment Workflow</a></summary>
+    <ol>
+    </ol>
+  </section>
+  <section>
+    <summary>Data Simulation</summary>
+    <ol>
+    <li class="observablehq-link"><a href="../ADaM-Datasets">ADaM Datasets</a></li>
+    <li class="observablehq-link"><a href="../Master-Dataset">Master Dataset</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Analysis</summary>
+    <ol>
+    <li class="observablehq-link"><a href="../Descriptive-Statistics">Descriptive Statistics</a></li>
+    <li class="observablehq-link"><a href="../Summerized-Information">Summarized Information</a></li>
+    <li class="observablehq-link"><a href="../Efficacy-Analyses">Efficacy Analyses</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Submission Outputs</summary>
+    <ol>
+    <li class="observablehq-link"><a href="../Demographic-Table">Demographic Table</a></li>
+    <li class="observablehq-link"><a href="../Primary-Table">Primary Table</a></li>
+    <li class="observablehq-link"><a href="../Followup-Table">Visit Completion Table</a></li>
+    </ol>
+  </section>
+  <section class="observablehq-section-active">
+    <summary>AI Experience</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./ai-study-explorer">AI Study Explorer</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./semantic-layer">Semantic Layer</a></li>
+    <li class="observablehq-link"><a href="./query-routing">Query Routing</a></li>
+    <li class="observablehq-link"><a href="./evaluation">Evaluation</a></li>
+    <li class="observablehq-link"><a href="./architecture">Architecture</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary class="observablehq-link"><a href="../About-Author">About the Author</a></summary>
+    <ol>
+    </ol>
+  </section>
+</nav>
+<script>{Object.assign(document.createElement("a"),{href:""}).password&&location.replace(location.href);const e=document.querySelector("#observablehq-sidebar"),t=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?t.checked=r==="true":t.indeterminate=!0;for(const o of document.querySelectorAll("#observablehq-sidebar summary")){const s=o.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${o.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+</nav>
+</aside>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<div class="observablehq observablehq--block"><!--:2ebf32a5:--></div>
+<div class="observablehq observablehq--block"><!--:63211b64:--></div>
+</main>
+</div>

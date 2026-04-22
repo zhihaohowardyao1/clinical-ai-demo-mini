@@ -1,0 +1,82 @@
+# Example user intents and how the semantic layer would frame them.
+# These are not backend prompts yet; they are public-facing examples.
+
+version: 0.1
+
+example_queries:
+  - id: enrollment_by_site
+    domain: enrollment
+    user_question: How many synthetic subjects are enrolled by site?
+    semantic_targets:
+      datasets: [enrollment_events]
+      metrics: [enrolled_subject_count]
+      dimensions: [site_id]
+    expected_answer_shape: grouped table or bar chart
+
+  - id: randomization_progress
+    domain: enrollment
+    user_question: What share of enrolled synthetic subjects have been randomized?
+    semantic_targets:
+      datasets: [enrollment_events]
+      metrics: [enrolled_subject_count, randomized_subject_count]
+    expected_answer_shape: KPI plus ratio explanation
+
+  - id: demographic_profile_by_arm
+    domain: demographics
+    user_question: Show the average age and subject count by treatment arm.
+    semantic_targets:
+      datasets: [adsl_subject_level]
+      metrics: [subject_count, average_age]
+      dimensions: [treatment_arm]
+    expected_answer_shape: summary table
+
+  - id: female_rate_by_arm
+    domain: demographics
+    user_question: What is the female subject rate in each demo arm?
+    semantic_targets:
+      datasets: [adsl_subject_level]
+      metrics: [female_subject_rate]
+      dimensions: [treatment_arm]
+    expected_answer_shape: grouped percentage table
+
+  - id: endpoint_lab_summary
+    domain: lab_summaries
+    user_question: What is the average synthetic Endpoint1 value at Visit2 by treatment arm?
+    semantic_targets:
+      datasets: [adlb_labs_long]
+      metrics: [average_lab_value]
+      dimensions: [treatment_arm]
+      filters:
+        - PARAMCD = Endpoint1
+        - VISIT = Visit2
+    expected_answer_shape: grouped summary
+
+  - id: change_from_baseline
+    domain: lab_summaries
+    user_question: What is the average change from baseline for Endpoint1 at Visit2?
+    semantic_targets:
+      datasets: [master_subject_analysis]
+      metrics: [average_change_from_baseline]
+      filters:
+        - parameter = Endpoint1
+        - visit = Visit2
+    expected_answer_shape: single summary or grouped table
+
+  - id: efficacy_orr
+    domain: efficacy_summaries
+    user_question: What is the synthetic ORR by treatment arm?
+    semantic_targets:
+      datasets: [adrs_response, adsl_subject_level]
+      metrics: [orr_rate]
+      dimensions: [treatment_arm]
+    expected_answer_shape: rate table or bar chart
+
+  - id: median_pfs_demo
+    domain: efficacy_summaries
+    user_question: What is the median synthetic time-to-event result by arm?
+    semantic_targets:
+      datasets: [adtte_time_to_event, adsl_subject_level]
+      metrics: [median_time_to_event]
+      dimensions: [treatment_arm]
+    expected_answer_shape: grouped median summary
+

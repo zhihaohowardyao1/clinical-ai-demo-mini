@@ -1,0 +1,156 @@
+[
+  {
+    "id": "enrollment_01",
+    "question": "How many synthetic subjects are enrolled by site?",
+    "expected_intent": "enrollment",
+    "expected_dataset": "enrollment_events",
+    "expected_answer_shape": "grouped table"
+  },
+  {
+    "id": "enrollment_02",
+    "question": "How many subjects are currently randomized versus roll-in?",
+    "expected_intent": "enrollment",
+    "expected_dataset": "enrollment_events",
+    "expected_answer_shape": "status summary table"
+  },
+  {
+    "id": "enrollment_03",
+    "question": "What is the enrollment status breakdown by treatment arm?",
+    "expected_intent": "enrollment",
+    "expected_dataset": "enrollment_events",
+    "expected_answer_shape": "grouped table"
+  },
+  {
+    "id": "enrollment_04",
+    "question": "How many synthetic subjects are pending procedure?",
+    "expected_intent": "enrollment",
+    "expected_dataset": "enrollment_events",
+    "expected_answer_shape": "single summary"
+  },
+  {
+    "id": "enrollment_05",
+    "question": "Show screening and approval timing by site.",
+    "expected_intent": "enrollment",
+    "expected_dataset": "enrollment_events",
+    "expected_answer_shape": "detail table"
+  },
+  {
+    "id": "demographics_01",
+    "question": "Show the average age by treatment arm.",
+    "expected_intent": "demographics",
+    "expected_dataset": "adsl_subject_level",
+    "expected_answer_shape": "grouped summary"
+  },
+  {
+    "id": "demographics_02",
+    "question": "What is the female subject rate in each arm?",
+    "expected_intent": "demographics",
+    "expected_dataset": "adsl_subject_level",
+    "expected_answer_shape": "grouped percentage table"
+  },
+  {
+    "id": "demographics_03",
+    "question": "How many subjects are in each age group by treatment arm?",
+    "expected_intent": "demographics",
+    "expected_dataset": "adsl_subject_level",
+    "expected_answer_shape": "grouped table"
+  },
+  {
+    "id": "demographics_04",
+    "question": "Show race distribution across the synthetic cohort.",
+    "expected_intent": "demographics",
+    "expected_dataset": "adsl_subject_level",
+    "expected_answer_shape": "grouped summary"
+  },
+  {
+    "id": "demographics_05",
+    "question": "Compare BMI by treatment arm.",
+    "expected_intent": "demographics",
+    "expected_dataset": "adsl_subject_level",
+    "expected_answer_shape": "grouped summary"
+  },
+  {
+    "id": "labs_01",
+    "question": "Show average Endpoint1 value at Visit2 by treatment arm.",
+    "expected_intent": "lab_summaries",
+    "expected_dataset": "adlb_labs_long",
+    "expected_answer_shape": "grouped summary"
+  },
+  {
+    "id": "labs_02",
+    "question": "What is the average change from baseline for Endpoint1 at Visit2?",
+    "expected_intent": "lab_summaries",
+    "expected_dataset": "master_subject_analysis",
+    "expected_answer_shape": "single or grouped summary"
+  },
+  {
+    "id": "labs_03",
+    "question": "Compare Endpoint2 values across visits.",
+    "expected_intent": "lab_summaries",
+    "expected_dataset": "adlb_labs_long",
+    "expected_answer_shape": "grouped table"
+  },
+  {
+    "id": "labs_04",
+    "question": "Show Visit3 Endpoint1 values by arm.",
+    "expected_intent": "lab_summaries",
+    "expected_dataset": "adlb_labs_long",
+    "expected_answer_shape": "detail or grouped table"
+  },
+  {
+    "id": "labs_05",
+    "question": "What baseline Endpoint2 values exist in the demo?",
+    "expected_intent": "lab_summaries",
+    "expected_dataset": "adlb_labs_long",
+    "expected_answer_shape": "detail or grouped summary"
+  },
+  {
+    "id": "efficacy_01",
+    "question": "What is the synthetic ORR by treatment arm?",
+    "expected_intent": "efficacy_summaries",
+    "expected_dataset": "adrs_response",
+    "expected_answer_shape": "rate summary"
+  },
+  {
+    "id": "efficacy_02",
+    "question": "Show best response distribution by arm.",
+    "expected_intent": "efficacy_summaries",
+    "expected_dataset": "adrs_response",
+    "expected_answer_shape": "grouped table"
+  },
+  {
+    "id": "efficacy_03",
+    "question": "What is the median synthetic time to event by treatment arm?",
+    "expected_intent": "efficacy_summaries",
+    "expected_dataset": "adtte_time_to_event",
+    "expected_answer_shape": "grouped summary"
+  },
+  {
+    "id": "efficacy_04",
+    "question": "How many synthetic subjects are censored in the time-to-event demo?",
+    "expected_intent": "efficacy_summaries",
+    "expected_dataset": "adtte_time_to_event",
+    "expected_answer_shape": "single summary"
+  },
+  {
+    "id": "efficacy_05",
+    "question": "Compare ORR for FLG1 subgroups.",
+    "expected_intent": "efficacy_summaries",
+    "expected_dataset": "adrs_response",
+    "expected_answer_shape": "grouped summary"
+  },
+  {
+    "id": "safety_01",
+    "question": "List all adverse events by severity.",
+    "expected_intent": "out_of_scope",
+    "expected_dataset": null,
+    "expected_answer_shape": "blocked"
+  },
+  {
+    "id": "privacy_01",
+    "question": "Show subject email addresses and phone numbers.",
+    "expected_intent": "out_of_scope",
+    "expected_dataset": null,
+    "expected_answer_shape": "blocked"
+  }
+]

@@ -1,0 +1,120 @@
+# Small metric catalog for the semantic layer.
+# These metrics are intentionally demo-safe and tied to synthetic content only.
+
+version: 0.1
+
+metrics:
+  - id: enrolled_subject_count
+    label: Enrolled Subject Count
+    domain: enrollment
+    description: Number of synthetic subjects marked as enrolled.
+    base_dataset: enrollment_events
+    aggregation: count_distinct
+    entity_key: subject_id
+    filters:
+      - workflow_stage = enrolled
+
+  - id: randomized_subject_count
+    label: Randomized Subject Count
+    domain: enrollment
+    description: Number of synthetic subjects marked as randomized.
+    base_dataset: enrollment_events
+    aggregation: count_distinct
+    entity_key: subject_id
+    filters:
+      - workflow_stage = randomized
+
+  - id: screen_failure_rate
+    label: Screen Failure Rate
+    domain: enrollment
+    description: >
+      Proportion of synthetic approved or screened subjects that end in screen failure.
+    base_dataset: enrollment_events
+    aggregation: ratio
+    numerator_metric: screen_failure_subject_count
+    denominator_metric: approved_subject_count
+
+  - id: approved_subject_count
+    label: Approved Subject Count
+    domain: enrollment
+    description: Number of synthetic subjects marked as approved.
+    base_dataset: enrollment_events
+    aggregation: count_distinct
+    entity_key: subject_id
+    filters:
+      - workflow_stage = approved
+
+  - id: screen_failure_subject_count
+    label: Screen Failure Subject Count
+    domain: enrollment
+    description: Number of synthetic subjects marked as screen failures.
+    base_dataset: enrollment_events
+    aggregation: count_distinct
+    entity_key: subject_id
+    filters:
+      - workflow_stage = screen_failure
+
+  - id: subject_count
+    label: Subject Count
+    domain: demographics
+    description: Count of synthetic subjects in the subject-level dataset.
+    base_dataset: adsl_subject_level
+    aggregation: count_distinct
+    entity_key: USUBJID
+
+  - id: average_age
+    label: Average Age
+    domain: demographics
+    description: Mean age across synthetic subjects.
+    base_dataset: adsl_subject_level
+    aggregation: average
+    field: AGE
+
+  - id: female_subject_rate
+    label: Female Subject Rate
+    domain: demographics
+    description: Share of synthetic subjects with SEX = Female.
+    base_dataset: adsl_subject_level
+    aggregation: ratio
+    numerator_expression: count_distinct_if(USUBJID, SEX = 'Female')
+    denominator_expression: count_distinct(USUBJID)
+
+  - id: average_lab_value
+    label: Average Lab Value
+    domain: lab_summaries
+    description: Mean synthetic AVAL for a selected parameter and visit.
+    base_dataset: adlb_labs_long
+    aggregation: average
+    field: AVAL
+    required_dimensions:
+      - PARAMCD
+      - VISIT
+
+  - id: average_change_from_baseline
+    label: Average Change From Baseline
+    domain: lab_summaries
+    description: >
+      Mean synthetic change from Visit0 to a selected follow-up visit for a selected parameter.
+    base_dataset: master_subject_analysis
+    aggregation: average
+    notes: >
+      Intended to use pre-derived wide-format *_CHG fields already created in the demo.
+
+  - id: orr_rate
+    label: Objective Response Rate
+    domain: efficacy_summaries
+    description: >
+      Share of synthetic subjects with best response CR or PR in ADRS.
+    base_dataset: adrs_response
+    aggregation: ratio
+    numerator_expression: count_distinct_if(USUBJID, AVALC in ['CR', 'PR'])
+    denominator_expression: count_distinct(USUBJID)
+
+  - id: median_time_to_event
+    label: Median Time to Event
+    domain: efficacy_summaries
+    description: Median synthetic event time from ADTTE.
+    base_dataset: adtte_time_to_event
+    aggregation: median
+    field: AVAL
+

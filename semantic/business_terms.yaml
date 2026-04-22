@@ -1,0 +1,85 @@
+# Public-facing business terms for the demo semantic layer.
+# These are intentionally small and safe for a synthetic clinical demo.
+
+version: 0.1
+
+business_terms:
+  - term: subject
+    label: Subject
+    description: A synthetic trial participant represented by a demo identifier.
+    synonyms: [participant, patient]
+
+  - term: site
+    label: Site
+    description: A synthetic enrollment or treatment location used in the demo.
+    synonyms: [study site, center]
+
+  - term: enrollment
+    label: Enrollment
+    description: >
+      Demo-safe operational progression from consent through approval,
+      enrollment, and randomization-style milestones.
+    synonyms: [screening workflow, accrual]
+
+  - term: treatment_arm
+    label: Treatment Arm
+    description: >
+      Synthetic treatment grouping derived from TRTEMFL, typically Arm A or Arm B.
+    synonyms: [arm, treatment group]
+
+  - term: demographic_profile
+    label: Demographic Profile
+    description: >
+      Subject-level demographic attributes such as age, sex, race, height,
+      weight, and derived BMI.
+    synonyms: [demographics, baseline profile]
+
+  - term: biomarker_flag
+    label: Biomarker Flag
+    description: >
+      Synthetic subgrouping signal such as FLG1 or a derived flag used only for
+      demo analysis segmentation.
+    synonyms: [flag, subgroup indicator]
+
+  - term: visit
+    label: Visit
+    description: A scheduled synthetic assessment time point such as Visit0 or Visit1.
+    synonyms: [timepoint, assessment visit]
+
+  - term: parameter_code
+    label: Parameter Code
+    description: >
+      A synthetic endpoint or lab concept identifier such as Endpoint1 or PFS.
+    synonyms: [PARAMCD, endpoint code]
+
+  - term: assessment_value
+    label: Assessment Value
+    description: Numeric value stored in AVAL for synthetic endpoint or lab observations.
+    synonyms: [AVAL, numeric result]
+
+  - term: lab_summary
+    label: Lab Summary
+    description: >
+      Aggregated view of synthetic repeated measures across visits and parameters.
+    synonyms: [endpoint summary, repeated-measure summary]
+
+  - term: efficacy_summary
+    label: Efficacy Summary
+    description: >
+      Synthetic summary of treatment effect signals such as time-to-event or
+      response rate outputs.
+    synonyms: [efficacy result, response summary]
+
+  - term: objective_response_rate
+    label: Objective Response Rate
+    description: >
+      Demo ORR calculated from synthetic best responses, where CR and PR are
+      treated as responders.
+    synonyms: [ORR, response rate]
+
+  - term: time_to_event
+    label: Time to Event
+    description: >
+      Synthetic duration-based outcome used to illustrate PFS-like analysis in the demo.
+    synonyms: [survival endpoint, ADTTE outcome]
+

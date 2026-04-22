@@ -1,0 +1,8 @@
+.DS_Store
+.env
+.git
+.gitignore
+dist
+node_modules
+src/.observablehq/cache
+npm-debug.log*

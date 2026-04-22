@@ -1,0 +1,59 @@
+# Logical SQL expressions for the demo semantic layer.
+# These are vendor-neutral templates, not executable warehouse-specific SQL.
+
+version: 0.1
+
+expressions:
+  - id: trtemfl_to_treatment_arm
+    description: Normalize the demo treatment flag to a readable treatment arm.
+    expression: |
+      CASE
+        WHEN TRTEMFL = 'A' THEN 'Arm A'
+        WHEN TRTEMFL = 'B' THEN 'Arm B'
+        ELSE 'Unknown Arm'
+      END
+
+  - id: age_group_standard
+    description: Demo-safe age banding for public examples.
+    expression: |
+      CASE
+        WHEN AGE < 60 THEN '<60'
+        WHEN AGE >= 60 AND AGE <= 75 THEN '60-75'
+        WHEN AGE > 75 THEN '>75'
+        ELSE 'Unknown'
+      END
+
+  - id: bmi_calculation
+    description: Synthetic BMI calculation from weight and height.
+    expression: |
+      CASE
+        WHEN HEIGHT IS NULL OR HEIGHT = 0 OR WEIGHT IS NULL THEN NULL
+        ELSE WEIGHT / POWER(HEIGHT / 100.0, 2)
+      END
+
+  - id: responder_flag
+    description: Flag CR and PR as objective responders in the synthetic ADRS dataset.
+    expression: |
+      CASE
+        WHEN AVALC IN ('CR', 'PR') THEN 1
+        ELSE 0
+      END
+
+  - id: baseline_visit_flag
+    description: Identify the baseline row in repeated synthetic visit data.
+    expression: |
+      CASE
+        WHEN VISIT = 'Visit0' THEN 1
+        ELSE 0
+      END
+
+  - id: endpoint_visit_column_name
+    description: Construct a wide-format column name from parameter and visit labels.
+    expression: |
+      CONCAT(PARAMCD, '_', VISIT)
+
+  - id: example_change_from_baseline
+    description: Template expression for a derived wide-format change value.
+    expression: |
+      current_visit_value - baseline_visit_value
+

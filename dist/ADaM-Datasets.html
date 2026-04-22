@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.11.0">
+<title>ADaM Datasets | Clinical Trial Analytics + AI Demo</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-air,near-midnight.6e6037b3.css">
+<link rel="preload" as="style" href="./_observablehq/stdlib/inputs.ea9fd553.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-air,near-midnight.6e6037b3.css">
+<link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.ea9fd553.css">
+<link rel="modulepreload" href="./_observablehq/client.c9712b15.js">
+<link rel="modulepreload" href="./_observablehq/runtime.41a8479e.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.37bd6a7b.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/72f4716c.js">
+<link rel="modulepreload" href="./_import/components/demoData.842f79a9.js">
+<link rel="modulepreload" href="./_import/components/pagePager.006a4fa6.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/inputs.3fd59fc5.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/18cbf477.js">
+<link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<script type="module">
+
+import {define} from "./_observablehq/client.c9712b15.js";
+import {registerFile} from "./_observablehq/stdlib.37bd6a7b.js";
+
+registerFile("./data/demo/adlbInputs.json", {"name":"./data/demo/adlbInputs.json","mimeType":"application/json","path":"./_file/data/demo/adlbInputs.cbd037a7.json","lastModified":1776825323227,"size":61});
+registerFile("./data/demo/adslInputs.json", {"name":"./data/demo/adslInputs.json","mimeType":"application/json","path":"./_file/data/demo/adslInputs.4fc7dd21.json","lastModified":1776825323226,"size":218});
+
+define({id: "7ae0ee65", outputs: ["html","buildDemoDataFlowNote","buildADLBWide","buildMasterData","DEFAULT_ADLB_INPUTS","DEFAULT_ADSL_INPUTS","generateADLB","generateADSL","isValidAdlbInputs","isValidAdslInputs","isValidMasterData","loadStoredValue","persistDemoBundle","renderPagePager"], body: async () => {
+const [{html}, {buildDemoDataFlowNote, buildADLBWide, buildMasterData, DEFAULT_ADLB_INPUTS, DEFAULT_ADSL_INPUTS, generateADLB, generateADSL, isValidAdlbInputs, isValidAdslInputs, isValidMasterData, loadStoredValue, persistDemoBundle}, {renderPagePager}] = await Promise.all([import("./_npm/htl@0.3.1/72f4716c.js"), import("./_import/components/demoData.842f79a9.js"), import("./_import/components/pagePager.006a4fa6.js")]);
+
+return {html,buildDemoDataFlowNote,buildADLBWide,buildMasterData,DEFAULT_ADLB_INPUTS,DEFAULT_ADSL_INPUTS,generateADLB,generateADSL,isValidAdlbInputs,isValidAdslInputs,isValidMasterData,loadStoredValue,persistDemoBundle,renderPagePager};
+}});
+
+define({id: "7db8d9cd", inputs: ["FileAttachment"], outputs: ["SummaryTable","adslSeedInputs","adlbSeedInputs"], body: async (FileAttachment) => {
+const {SummaryTable} = await import("./_import/components/summaryTable.78ad1a57.js");
+const adslSeedInputs = await FileAttachment("./data/demo/adslInputs.json").json();
+const adlbSeedInputs = await FileAttachment("./data/demo/adlbInputs.json").json();
+return {SummaryTable,adslSeedInputs,adlbSeedInputs};
+}});
+
+define({id: "6dbbad94", inputs: ["loadStoredValue","adslSeedInputs","DEFAULT_ADSL_INPUTS","adlbSeedInputs","DEFAULT_ADLB_INPUTS","isValidAdslInputs","isValidAdlbInputs"], outputs: ["storedAdslInputs","storedAdlbInputs","safeAdslInputs","safeAdlbInputs"], body: (loadStoredValue,adslSeedInputs,DEFAULT_ADSL_INPUTS,adlbSeedInputs,DEFAULT_ADLB_INPUTS,isValidAdslInputs,isValidAdlbInputs) => {
+const storedAdslInputs = loadStoredValue("adslInputs", adslSeedInputs ?? DEFAULT_ADSL_INPUTS);
+const storedAdlbInputs = loadStoredValue("adlbInputs", adlbSeedInputs ?? DEFAULT_ADLB_INPUTS);
+const safeAdslInputs = isValidAdslInputs(storedAdslInputs.value) ? storedAdslInputs.value : adslSeedInputs ?? DEFAULT_ADSL_INPUTS;
+const safeAdlbInputs = isValidAdlbInputs(storedAdlbInputs.value) ? storedAdlbInputs.value : adlbSeedInputs ?? DEFAULT_ADLB_INPUTS;
+return {storedAdslInputs,storedAdlbInputs,safeAdslInputs,safeAdlbInputs};
+}});
+
+define({id: "5811b4c7", inputs: ["view","Inputs","safeAdslInputs","html"], outputs: ["adslInputs"], body: (view,Inputs,safeAdslInputs,html) => {
+const adslInputs = view(
+  Inputs.form(
+    {
+      enrollment: Inputs.range([60, 200], {label: "Sample size (ITT)", step: 10, value: safeAdslInputs.enrollment}),
+      sex: Inputs.range([0, 1], {label: "Male vs. Female", step: 0.05, value: safeAdslInputs.sex}),
+      age1: Inputs.range([30, 50], {label: "Age Min", step: 1, value: safeAdslInputs.age1}),
+      age2: Inputs.range([60, 90], {label: "Age Max", step: 1, value: safeAdslInputs.age2}),
+      height1: Inputs.range([130, 150], {label: "Height Min", step: 1, value: safeAdslInputs.height1}),
+      height2: Inputs.range([180, 200], {label: "Height Max", step: 1, value: safeAdslInputs.height2}),
+      weight1: Inputs.range([30, 50], {label: "Weight Min", step: 5, value: safeAdslInputs.weight1}),
+      weight2: Inputs.range([100, 120], {label: "Weight Max", step: 5, value: safeAdslInputs.weight2}),
+      flg1: Inputs.range([0, 1], {label: "Flag1 Ratio", step: 0.1, value: safeAdslInputs.flg1}),
+      trt: Inputs.range([0, 1], {label: "Treatment vs. Control", step: 0.1, value: safeAdslInputs.trt})
+    },
+    {
+      template: (parts) => {
+        const values = Object.values(parts);
+        const left = values.filter((d, i) => i % 2 === 0);
+        const right = values.filter((d, i) => i % 2 !== 0);
+        return html`<div style="display:flex;gap:20px;justify-content:space-between;max-width:780px;">
+          <div>${left}</div>
+          <div>${right}</div>
+        </div>`;
+      }
+    }
+  )
+);
+return {adslInputs};
+}});
+
+define({id: "b7c2c78e", inputs: ["generateADSL","adslInputs"], outputs: ["ADSL"], body: (generateADSL,adslInputs) => {
+const ADSL = generateADSL(adslInputs);
+return {ADSL};
+}});
+
+define({id: "61f86a92", inputs: ["display","SummaryTable","ADSL"], body: (display,SummaryTable,ADSL) => {
+display(SummaryTable(ADSL, {label: "ADSL"}))
+}});
+
+define({id: "004d5e81", inputs: ["Inputs","ADSL","display"], body: async (Inputs,ADSL,display) => {
+display(await(
+Inputs.table(ADSL)
+))
+}});
+
+define({id: "b4de50dd", inputs: ["view","Inputs","safeAdlbInputs"], outputs: ["adlbInputs"], body: (view,Inputs,safeAdlbInputs) => {
+const adlbInputs = view(
+  Inputs.form({
+    endpoints: Inputs.range([1, 4], {label: "Number of Endpoint", step: 1, value: safeAdlbInputs.endpoints}),
+    visits: Inputs.range([2, 5], {label: "Number of Visit", step: 1, value: safeAdlbInputs.visits}),
+    retention: Inputs.range([0.6, 1], {label: "Follow Up Retention Rate", step: 0.1, value: safeAdlbInputs.retention})
+  })
+);
+return {adlbInputs};
+}});
+
+define({id: "45dcf6fb", inputs: ["generateADLB","adlbInputs","ADSL","buildADLBWide","buildMasterData"], outputs: ["ADLB","ADLB_Long","masterData"], body: (generateADLB,adlbInputs,ADSL,buildADLBWide,buildMasterData) => {
+const ADLB = generateADLB(adlbInputs, ADSL);
+const ADLB_Long = buildADLBWide(ADLB);
+const masterData = buildMasterData(ADSL, ADLB_Long);
+return {ADLB,ADLB_Long,masterData};
+}});
+
+define({id: "d76491d5", inputs: ["loadStoredValue","isValidMasterData","persistDemoBundle","ADSL","ADLB","adslInputs","adlbInputs","ADLB_Long","masterData"], body: (loadStoredValue,isValidMasterData,persistDemoBundle,ADSL,ADLB,adslInputs,adlbInputs,ADLB_Long,masterData) => {
+if (typeof window !== "undefined" && window.localStorage) {
+  const existingMasterData = loadStoredValue("masterData", null).value;
+  if (!isValidMasterData(existingMasterData)) {
+    persistDemoBundle({ADSL, ADLB, adslInputs, adlbInputs, ADLB_Long, masterData});
+  }
+}
+}});
+
+define({id: "aa36b4d1", inputs: ["display","SummaryTable","ADLB"], body: (display,SummaryTable,ADLB) => {
+display(SummaryTable(ADLB, {label: "ADLB"}))
+}});
+
+define({id: "f7e4ecf9", inputs: ["Inputs","ADLB","display"], body: async (Inputs,ADLB,display) => {
+display(await(
+Inputs.table(ADLB)
+))
+}});
+
+define({id: "249216e8", inputs: ["display","html"], body: (display,html) => {
+display(html`<p><strong>Derived subject-level structures</strong></p>`)
+}});
+
+define({id: "6d200654", inputs: ["Inputs","ADLB_Long","display"], body: async (Inputs,ADLB_Long,display) => {
+display(await(
+Inputs.table(ADLB_Long)
+))
+}});
+
+define({id: "83190644", inputs: ["Inputs","masterData","display"], body: async (Inputs,masterData,display) => {
+display(await(
+Inputs.table(masterData)
+))
+}});
+
+define({id: "4bc4cb0a", inputs: ["display","html","buildDemoDataFlowNote","storedAdslInputs","storedAdlbInputs"], body: (display,html,buildDemoDataFlowNote,storedAdslInputs,storedAdlbInputs) => {
+display(html`<p><small>${buildDemoDataFlowNote([
+  {label: "ADSL controls", source: storedAdslInputs.source},
+  {label: "ADLB controls", source: storedAdlbInputs.source}
+])} Saving below updates the browser demo bundle keys used by the migrated analytics pages and the remaining legacy pages.</small></p>`)
+}});
+
+define({id: "0bbbf339", inputs: ["display","Inputs","persistDemoBundle","ADSL","ADLB","adslInputs","adlbInputs","ADLB_Long","masterData"], body: (display,Inputs,persistDemoBundle,ADSL,ADLB,adslInputs,adlbInputs,ADLB_Long,masterData) => {
+display(
+  Inputs.button("Once all parameters are set, click to store datasets", {
+    reduce: () => {
+      persistDemoBundle({
+        ADSL,
+        ADLB,
+        adslInputs,
+        adlbInputs,
+        ADLB_Long,
+        masterData
+      });
+      return "saved";
+    }
+  })
+)
+}});
+
+define({id: "693f278a", inputs: ["display","renderPagePager"], body: (display,renderPagePager) => {
+display(renderPagePager("/ADaM-Datasets"));
+}});
+
+</script>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="./">Clinical Trial Analytics + AI Demo</a></li>
+  </ol>
+  <section>
+    <summary class="observablehq-link"><a href="./Enrollment-Monitoring">Enrollment Workflow</a></summary>
+    <ol>
+    </ol>
+  </section>
+  <section class="observablehq-section-active">
+    <summary>Data Simulation</summary>
+    <ol>
+    <li class="observablehq-link observablehq-link-active"><a href="./ADaM-Datasets">ADaM Datasets</a></li>
+    <li class="observablehq-link"><a href="./Master-Dataset">Master Dataset</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Analysis</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./Descriptive-Statistics">Descriptive Statistics</a></li>
+    <li class="observablehq-link"><a href="./Summerized-Information">Summarized Information</a></li>
+    <li class="observablehq-link"><a href="./Efficacy-Analyses">Efficacy Analyses</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Submission Outputs</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./Demographic-Table">Demographic Table</a></li>
+    <li class="observablehq-link"><a href="./Primary-Table">Primary Table</a></li>
+    <li class="observablehq-link"><a href="./Followup-Table">Visit Completion Table</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>AI Experience</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./ai/ai-study-explorer">AI Study Explorer</a></li>
+    <li class="observablehq-link"><a href="./ai/semantic-layer">Semantic Layer</a></li>
+    <li class="observablehq-link"><a href="./ai/query-routing">Query Routing</a></li>
+    <li class="observablehq-link"><a href="./ai/evaluation">Evaluation</a></li>
+    <li class="observablehq-link"><a href="./ai/architecture">Architecture</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary class="observablehq-link"><a href="./About-Author">About the Author</a></summary>
+    <ol>
+    </ol>
+  </section>
+</nav>
+<script>{Object.assign(document.createElement("a"),{href:""}).password&&location.replace(location.href);const e=document.querySelector("#observablehq-sidebar"),t=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?t.checked=r==="true":t.indeterminate=!0;for(const o of document.querySelectorAll("#observablehq-sidebar summary")){const s=o.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${o.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+<div>Contents</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#adsl">ADSL</a></li>
+<li class="observablehq-secondary-link"><a href="#adlb">ADLB</a></li>
+</ol>
+</nav>
+</aside>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<div class="observablehq observablehq--block"><!--:7ae0ee65:--></div>
+<div class="observablehq observablehq--block"><!--:7db8d9cd:--></div>
+<h1 id="a-da-m-dataset" tabindex="-1"><a class="observablehq-header-anchor" href="#a-da-m-dataset">ADaM Dataset</a></h1>
+<blockquote>
+<p>CDISC standards are required for regulatory submissions to the FDA (CDER &amp; CBER) for drugs and biologics. While CDRH does not mandate the use of CDISC standards, it strongly encourages manufacturers to adopt data and terminology standards in pre-clinical and post-market submissions to enhance consistency and improve data quality.</p>
+</blockquote>
+<blockquote>
+<p>The Data Simulation section enables the generation of multiple simulated datasets based on CDISC standards. These datasets are invaluable for early-phase exploratory analyses, model testing, and power calculations. Whether you are exploring patient subgroups, treatment efficacy, or biomarker correlations, simulated data provides the flexibility to investigate various scenarios without relying on real-world trial data, which may be limited or unavailable in early research phases.</p>
+</blockquote>
+<div class="observablehq observablehq--block"><!--:6dbbad94:--></div>
+<h1 id="adsl" tabindex="-1"><a class="observablehq-header-anchor" href="#adsl">ADSL</a></h1>
+<div class="observablehq observablehq--block"><!--:5811b4c7:--></div>
+<div class="observablehq observablehq--block"><!--:b7c2c78e:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:61f86a92:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:004d5e81:--></div>
+<h1 id="adlb" tabindex="-1"><a class="observablehq-header-anchor" href="#adlb">ADLB</a></h1>
+<div class="observablehq observablehq--block"><!--:b4de50dd:--></div>
+<div class="observablehq observablehq--block"><!--:45dcf6fb:--></div>
+<div class="observablehq observablehq--block"><!--:d76491d5:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:aa36b4d1:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:f7e4ecf9:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:249216e8:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:6d200654:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:83190644:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:4bc4cb0a:--></div>
+<div class="observablehq observablehq--block"><observablehq-loading></observablehq-loading><!--:0bbbf339:--></div>
+<div class="observablehq observablehq--block"><!--:693f278a:--></div>
+</main>
+</div>

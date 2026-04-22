@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.11.0">
+<title>AI Architecture | Clinical Trial Analytics + AI Demo</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="../_observablehq/theme-air,near-midnight.6e6037b3.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="../_observablehq/theme-air,near-midnight.6e6037b3.css">
+<link rel="modulepreload" href="../_observablehq/client.c9712b15.js">
+<link rel="modulepreload" href="../_observablehq/runtime.41a8479e.js">
+<link rel="modulepreload" href="../_observablehq/stdlib.37bd6a7b.js">
+<link rel="modulepreload" href="../_import/components/aiSection.9f9869a1.js">
+<link rel="modulepreload" href="../_import/components/pagePager.006a4fa6.js">
+<link rel="modulepreload" href="../_npm/htl@0.3.1/72f4716c.js">
+<link rel="icon" href="../_file/observable.1af93621.png" type="image/png" sizes="32x32">
+<script type="module">
+
+import {define} from "../_observablehq/client.c9712b15.js";
+
+define({id: "66f97c80", inputs: ["display"], outputs: ["createAIPageHero","createCallout","createCardGrid","createFlow","createStatGrid","createTableSection","ensureAISectionStyles","renderPagePager","root"], body: async (display) => {
+const [{createAIPageHero, createCallout, createCardGrid, createFlow, createStatGrid, createTableSection, ensureAISectionStyles}, {renderPagePager}] = await Promise.all([import("../_import/components/aiSection.9f9869a1.js"), import("../_import/components/pagePager.006a4fa6.js")]);
+
+ensureAISectionStyles();
+
+const root = document.createElement("div");
+root.className = "ai-section-page";
+
+root.append(
+  createAIPageHero({
+    kicker: "System View",
+    title: "Architecture",
+    summary:
+      "The AI area is built as a thin explainable layer on top of the synthetic clinical demo. It combines a visible front-end experience, a compact semantic contract, a swappable provider layer, and a read-only DuckDB execution path so visitors can understand how answers are produced without mistaking the demo for an open-ended copilot.",
+    pills: ["Front-end first", "Provider-neutral", "Read-only SQL", "Demo-safe"]
+  })
+);
+
+root.append(
+  createStatGrid([
+    {label: "Primary API", value: "POST /api/ask"},
+    {label: "Data Engine", value: "DuckDB demo database"},
+    {label: "Provider Modes", value: "Mock + live abstraction"},
+    {label: "Safety Model", value: "Single-view read-only SQL"}
+  ])
+);
+
+root.append(
+  createFlow([
+    {
+      title: "Visitor interacts with a public-facing page",
+      body: "The Study Explorer accepts a plain-language question and keeps the main explainable states visible on screen."
+    },
+    {
+      title: "Backend resolves semantic context",
+      body: "Routing rules, business terms, metric definitions, and example queries narrow the request to a supported domain and view."
+    },
+    {
+      title: "Provider proposes SQL under strict rules",
+      body: "A mock provider or online provider returns compact structured output. SQL is validated before execution."
+    },
+    {
+      title: "DuckDB returns the result",
+      body: "The selected demo view is queried, rows are returned, and the front end renders dataset, routing, SQL, results, interpretation, and warnings."
+    }
+  ])
+);
+
+root.append(
+  createTableSection({
+    title: "Architecture Layers",
+    description: "Each layer is intentionally narrow so the public demo stays understandable and stable.",
+    columns: ["Layer", "Current Role", "Public-Demo Benefit"],
+    rows: [
+      {Layer: "AI pages", "Current Role": "Present explainable analytics in a guided UI", "Public-Demo Benefit": "Visitors can inspect the system instead of treating it as a black box."},
+      {Layer: "Semantic layer", "Current Role": "Define datasets, terms, metrics, and examples", "Public-Demo Benefit": "Makes the product understandable to non-experts."},
+      {Layer: "Routing + prompt assembly", "Current Role": "Choose a domain, view, and compact context", "Public-Demo Benefit": "Reduces drift and keeps the routing reason visible."},
+      {Layer: "Provider abstraction", "Current Role": "Support mock or online SQL generation", "Public-Demo Benefit": "The demo remains stable even without a live model path."},
+      {Layer: "SQL validation", "Current Role": "Block unsafe or out-of-scope queries", "Public-Demo Benefit": "Shows clear safety boundaries during a public walkthrough."},
+      {Layer: "DuckDB demo views", "Current Role": "Execute read-only queries against synthetic data", "Public-Demo Benefit": "Answers are grounded in a stable, inspectable dataset."}
+    ]
+  })
+);
+
+root.append(
+  createCardGrid([
+    {
+      title: "Why The Mock Provider Still Matters",
+      body:
+        "The mock provider is not just a development convenience. It is a public-demo reliability feature. It guarantees the explorer can demonstrate routing, selected dataset, SQL, results, and interpretation even if a live provider is unavailable."
+    },
+    {
+      title: "Why The Backend Stays Thin",
+      body:
+        "The current architecture favors a minimal API over a large orchestration layer. That keeps the product easy to explain and prevents the demo from looking more capable than it is."
+    },
+    {
+      title: "Why SQL Stays Visible",
+      body:
+        "Showing the SQL makes the product more credible. It turns the AI section into an explainable analytics surface rather than a chat-only interface."
+    }
+  ])
+);
+
+root.append(
+  createCallout("Boundaries That Stay Intentionally Visible", [
+    "The current AI area does not expose a free-form agent or autonomous workflow.",
+    "The backend only executes validated read-only SQL against the selected demo view.",
+    "The architecture is designed for public clarity first, not for maximum backend complexity."
+  ])
+);
+
+display(root);
+return {createAIPageHero,createCallout,createCardGrid,createFlow,createStatGrid,createTableSection,ensureAISectionStyles,renderPagePager,root};
+}});
+
+define({id: "c72427a2", inputs: ["display","renderPagePager"], body: (display,renderPagePager) => {
+display(renderPagePager("/ai/architecture"));
+}});
+
+</script>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="../">Clinical Trial Analytics + AI Demo</a></li>
+  </ol>
+  <section>
+    <summary class="observablehq-link"><a href="../Enrollment-Monitoring">Enrollment Workflow</a></summary>
+    <ol>
+    </ol>
+  </section>
+  <section>
+    <summary>Data Simulation</summary>
+    <ol>
+    <li class="observablehq-link"><a href="../ADaM-Datasets">ADaM Datasets</a></li>
+    <li class="observablehq-link"><a href="../Master-Dataset">Master Dataset</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Analysis</summary>
+    <ol>
+    <li class="observablehq-link"><a href="../Descriptive-Statistics">Descriptive Statistics</a></li>
+    <li class="observablehq-link"><a href="../Summerized-Information">Summarized Information</a></li>
+    <li class="observablehq-link"><a href="../Efficacy-Analyses">Efficacy Analyses</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary>Submission Outputs</summary>
+    <ol>
+    <li class="observablehq-link"><a href="../Demographic-Table">Demographic Table</a></li>
+    <li class="observablehq-link"><a href="../Primary-Table">Primary Table</a></li>
+    <li class="observablehq-link"><a href="../Followup-Table">Visit Completion Table</a></li>
+    </ol>
+  </section>
+  <section class="observablehq-section-active">
+    <summary>AI Experience</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./ai-study-explorer">AI Study Explorer</a></li>
+    <li class="observablehq-link"><a href="./semantic-layer">Semantic Layer</a></li>
+    <li class="observablehq-link"><a href="./query-routing">Query Routing</a></li>
+    <li class="observablehq-link"><a href="./evaluation">Evaluation</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./architecture">Architecture</a></li>
+    </ol>
+  </section>
+  <section>
+    <summary class="observablehq-link"><a href="../About-Author">About the Author</a></summary>
+    <ol>
+    </ol>
+  </section>
+</nav>
+<script>{Object.assign(document.createElement("a"),{href:""}).password&&location.replace(location.href);const e=document.querySelector("#observablehq-sidebar"),t=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?t.checked=r==="true":t.indeterminate=!0;for(const o of document.querySelectorAll("#observablehq-sidebar summary")){const s=o.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${o.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+</nav>
+</aside>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<div class="observablehq observablehq--block"><!--:66f97c80:--></div>
+<div class="observablehq observablehq--block"><!--:c72427a2:--></div>
+</main>
+</div>
